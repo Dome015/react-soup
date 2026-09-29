@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Dashboard — CompletePattern</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+<script type="module" src="../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<main class="soup-example-page">
+<div class="soup-stack soup-gap--lg">
+<div class="soup-inline soup-gap--md soup-align--end soup-justify--between">
+<header><h1>Workspace at a glance.</h1><p class="soup-example-lead">A clear view of the work moving forward.</p></header>
+<button type="button" class="soup-button soup-button--primary soup-button--md">New project</button></div>
+<div class="soup-grid soup-gap--md">
+<article class="soup-card">
+<div class="soup-stack soup-gap--sm"><span class="soup-example-stat-label">Active projects</span><strong class="soup-example-stat">12</strong><span class="soup-example-caption">+2 this month</span></div>
+</article>
+<article class="soup-card">
+<div class="soup-stack soup-gap--sm"><span class="soup-example-stat-label">Open tasks</span><strong class="soup-example-stat">38</strong><span class="soup-example-caption">Across 5 teams</span></div>
+</article>
+<article class="soup-card">
+<div class="soup-stack soup-gap--sm"><span class="soup-example-stat-label">Completion</span><strong class="soup-example-stat">84%</strong><span class="soup-example-caption">+6% this month</span></div>
+</article>
+</div>
+<figure class="soup-chart"><figcaption class="soup-chart__header"><strong>Completed work</strong><span>Tasks completed each month</span></figcaption>
+<div class="soup-chart__plot"><svg viewBox="0 0 640 320" role="img" aria-label="Completed work, area chart"><g aria-hidden="true"><g><line class="soup-chart__grid" x1="60" x2="620" y1="272" y2="272"></line><text class="soup-chart__axis-label" x="50" y="272" text-anchor="end" dominant-baseline="middle">0</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="209" y2="209"></line><text class="soup-chart__axis-label" x="50" y="209" text-anchor="end" dominant-baseline="middle">10</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="146" y2="146"></line><text class="soup-chart__axis-label" x="50" y="146" text-anchor="end" dominant-baseline="middle">20</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="83" y2="83"></line><text class="soup-chart__axis-label" x="50" y="83" text-anchor="end" dominant-baseline="middle">30</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="20" y2="20"></line><text class="soup-chart__axis-label" x="50" y="20" text-anchor="end" dominant-baseline="middle">40</text></g></g><g aria-hidden="true"><text class="soup-chart__axis-label" x="60" y="298" text-anchor="middle">Jan</text><text class="soup-chart__axis-label" x="172" y="298" text-anchor="middle">Feb</text><text class="soup-chart__axis-label" x="284" y="298" text-anchor="middle">Mar</text><text class="soup-chart__axis-label" x="396" y="298" text-anchor="middle">Apr</text><text class="soup-chart__axis-label" x="508" y="298" text-anchor="middle">May</text><text class="soup-chart__axis-label" x="620" y="298" text-anchor="middle">Jun</text></g><g style="color:var(--soup-chart-color-1)"><g><path class="soup-chart__area" d="M 60 133.39999999999998 L 172 101.89999999999998 L 284 114.5 L 396 70.39999999999998 L 508 51.5 L 620 32.60000000000002 L 620 272 L 60 272 Z"></path><path class="soup-chart__line" d="M 60 133.39999999999998 L 172 101.89999999999998 L 284 114.5 L 396 70.39999999999998 L 508 51.5 L 620 32.60000000000002"></path></g><circle class="soup-chart__point" cx="60" cy="133.39999999999998" r="5" tabindex="0" aria-label="Tasks, Jan: 22"><title>Tasks, Jan: 22</title></circle><circle class="soup-chart__point" cx="172" cy="101.89999999999998" r="5" tabindex="0" aria-label="Tasks, Feb: 27"><title>Tasks, Feb: 27</title></circle><circle class="soup-chart__point" cx="284" cy="114.5" r="5" tabindex="0" aria-label="Tasks, Mar: 25"><title>Tasks, Mar: 25</title></circle><circle class="soup-chart__point" cx="396" cy="70.39999999999998" r="5" tabindex="0" aria-label="Tasks, Apr: 32"><title>Tasks, Apr: 32</title></circle><circle class="soup-chart__point" cx="508" cy="51.5" r="5" tabindex="0" aria-label="Tasks, May: 35"><title>Tasks, May: 35</title></circle><circle class="soup-chart__point" cx="620" cy="32.60000000000002" r="5" tabindex="0" aria-label="Tasks, Jun: 38"><title>Tasks, Jun: 38</title></circle></g></svg></div>
+<table class="soup-chart__data"><caption>Completed work data</caption>
+<thead>
+<tr><th scope="col">Period</th><th scope="col">Tasks</th></tr>
+</thead>
+<tbody>
+<tr><td>Jan</td><td>22</td></tr>
+<tr><td>Feb</td><td>27</td></tr>
+<tr><td>Mar</td><td>25</td></tr>
+<tr><td>Apr</td><td>32</td></tr>
+<tr><td>May</td><td>35</td></tr>
+<tr><td>Jun</td><td>38</td></tr>
+</tbody>
+</table>
+</figure>
+<article class="soup-card">
+<div class="soup-stack soup-gap--md">
+<div class="soup-inline soup-gap--md soup-align--center soup-justify--between"><h2>Recent projects</h2><a class="soup-link" href="#all-projects">View all</a></div>
+<div class="soup-table-scroll" role="region" aria-label="Scrollable table" tabindex="0">
+<table class="soup-table">
+<thead>
+<tr><th scope="col">Project</th><th scope="col">Type</th><th scope="col">Status</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Atlas</strong></td><td>Design system</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td><strong>Orion</strong></td><td>Product launch</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td><strong>Meridian</strong></td><td>Research</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body>
+</html>

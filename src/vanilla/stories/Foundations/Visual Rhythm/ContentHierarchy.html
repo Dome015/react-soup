@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foundations/Visual Rhythm — ContentHierarchy</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<div class="soup-stack soup-gap--lg">
+<div class="soup-grid soup-gap--md">
+<article class="soup-card"><h2>Project summary</h2><p>12 active projects</p></article>
+<article class="soup-card"><h2>Team activity</h2><p>8 contributors this month</p></article>
+</div>
+<div role="status" class="soup-alert soup-tone--info"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></svg>
+<div><strong>Review ready</strong>
+<div>The latest report is available to the team.</div>
+</div>
+</div>
+<div class="soup-accordion">
+<details class="soup-accordion__item" open="">
+<summary>How is progress measured?<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></summary>
+<div class="soup-accordion__content">Completed tasks are counted at the end of each week.</div>
+</details>
+</div>
+<figure class="soup-chart"><figcaption class="soup-chart__header"><strong>Completed work</strong><span>Tasks completed by week</span></figcaption>
+<div class="soup-chart__plot"><svg viewBox="0 0 640 320" role="img" aria-label="Completed work, line chart"><g aria-hidden="true"><g><line class="soup-chart__grid" x1="60" x2="620" y1="272" y2="272"></line><text class="soup-chart__axis-label" x="50" y="272" text-anchor="end" dominant-baseline="middle">0</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="209" y2="209"></line><text class="soup-chart__axis-label" x="50" y="209" text-anchor="end" dominant-baseline="middle">5</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="146" y2="146"></line><text class="soup-chart__axis-label" x="50" y="146" text-anchor="end" dominant-baseline="middle">10</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="83" y2="83"></line><text class="soup-chart__axis-label" x="50" y="83" text-anchor="end" dominant-baseline="middle">15</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="20" y2="20"></line><text class="soup-chart__axis-label" x="50" y="20" text-anchor="end" dominant-baseline="middle">20</text></g></g><g aria-hidden="true"><text class="soup-chart__axis-label" x="60" y="298" text-anchor="middle">Week 1</text><text class="soup-chart__axis-label" x="246.66666666666666" y="298" text-anchor="middle">Week 2</text><text class="soup-chart__axis-label" x="433.3333333333333" y="298" text-anchor="middle">Week 3</text><text class="soup-chart__axis-label" x="620" y="298" text-anchor="middle">Week 4</text></g><g style="color:var(--soup-chart-color-1)"><g><path class="soup-chart__line" d="M 60 171.2 L 246.66666666666666 120.80000000000001 L 433.3333333333333 133.39999999999998 L 620 57.80000000000001"></path></g><circle class="soup-chart__point" cx="60" cy="171.2" r="5" tabindex="0" aria-label="Design, Week 1: 8"><title>Design, Week 1: 8</title></circle><circle class="soup-chart__point" cx="246.66666666666666" cy="120.80000000000001" r="5" tabindex="0" aria-label="Design, Week 2: 12"><title>Design, Week 2: 12</title></circle><circle class="soup-chart__point" cx="433.3333333333333" cy="133.39999999999998" r="5" tabindex="0" aria-label="Design, Week 3: 11"><title>Design, Week 3: 11</title></circle><circle class="soup-chart__point" cx="620" cy="57.80000000000001" r="5" tabindex="0" aria-label="Design, Week 4: 17"><title>Design, Week 4: 17</title></circle></g><g style="color:var(--soup-chart-color-2)"><g><path class="soup-chart__line" d="M 60 146 L 246.66666666666666 108.19999999999999 L 433.3333333333333 70.39999999999998 L 620 20"></path></g><circle class="soup-chart__point" cx="60" cy="146" r="5" tabindex="0" aria-label="Engineering, Week 1: 10"><title>Engineering, Week 1: 10</title></circle><circle class="soup-chart__point" cx="246.66666666666666" cy="108.19999999999999" r="5" tabindex="0" aria-label="Engineering, Week 2: 13"><title>Engineering, Week 2: 13</title></circle><circle class="soup-chart__point" cx="433.3333333333333" cy="70.39999999999998" r="5" tabindex="0" aria-label="Engineering, Week 3: 16"><title>Engineering, Week 3: 16</title></circle><circle class="soup-chart__point" cx="620" cy="20" r="5" tabindex="0" aria-label="Engineering, Week 4: 20"><title>Engineering, Week 4: 20</title></circle></g></svg></div>
+<ul class="soup-chart__legend" aria-label="Legend">
+<li style="color:var(--soup-chart-color-1)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Design</span></li>
+<li style="color:var(--soup-chart-color-2)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Engineering</span></li>
+</ul>
+<table class="soup-chart__data"><caption>Completed work data</caption>
+<thead>
+<tr><th scope="col">Period</th><th scope="col">Design</th><th scope="col">Engineering</th></tr>
+</thead>
+<tbody>
+<tr><td>Week 1</td><td>8</td><td>10</td></tr>
+<tr><td>Week 2</td><td>12</td><td>13</td></tr>
+<tr><td>Week 3</td><td>11</td><td>16</td></tr>
+<tr><td>Week 4</td><td>17</td><td>20</td></tr>
+</tbody>
+</table>
+</figure></div>
+</div>
+</div>
+</div>
+</body>
+</html>

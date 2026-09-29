@@ -1,0 +1,11 @@
+# Vanilla web implementation
+
+This directory is HTML first. Vendor it together with `../shared`. Import `../shared/styles/index.css` once. Use the HTML shown in `stories/` and `examples/` directly in pages; ordinary controls and layout need **no Soup JavaScript API**. Do not create JavaScript factories for buttons, fields, cards, badges, native inputs, layout wrappers, or other markup that HTML already expresses clearly. `behavior.ts` is a single optional progressive enhancement entry point: load it once only when a page uses interactive Soup patterns.
+
+`components/<Name>/AGENTS.md` explains the semantic element, required classes, state attributes, accessibility contract, and whether behavior needs TypeScript. Each component has its own directory even when CSS and HTML are the entire implementation. The shared CSS is the only visual style source. Do not put aesthetic literals in vanilla CSS or script.
+
+Use native browser behavior first: `<button>`, `<a>`, `<input>`, `<select>`, `<textarea>`, `<progress>`, `<details>`, `<dialog>`, and semantic tables. For components whose React counterpart adds behavior unavailable in HTML alone, attach the smallest TypeScript controller to existing markup. Controllers must be opt-in, scoped to one root element, typed, and return a cleanup function when they install global listeners. They must not own a page renderer or require a custom element creation syntax.
+
+The `stories/` HTML files are exact initial DOM snapshots of the React stories, used for visual comparison. `examples/` contains the matching full-page starting states. Extend interactive examples with typed scripts while retaining the same semantic HTML. A snapshot alone verifies appearance at rest, not interaction; exercise keyboard, focus, validation, empty, loading, and changed states against React before declaring parity. Check auto, forced light, and forced dark themes at narrow and wide widths.
+
+TypeScript is a host development dependency compiled to browser JavaScript. The `.ts` path in standalone story pages is handled by Vite during development; in a vendored host, compile it before loading it in a browser. It is not a runtime peer dependency. The vanilla runtime must use browser APIs and local `../shared` code only.

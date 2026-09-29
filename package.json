@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "A vendorable, token-driven React component library",
+  "description": "A vendorable, token-driven UI library for React and plain web projects",
   "exports": {
-    ".": "./src/index.ts",
-    "./styles.css": "./src/styles/index.css"
+    ".": "./src/react/index.ts",
+    "./styles.css": "./src/shared/styles/index.css",
+    "./vanilla": "./src/vanilla/behavior.ts"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -15,7 +16,9 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "vanilla:stories": "vite --host 127.0.0.1 --port 6007",
+    "snapshot:vanilla": "node --experimental-strip-types scripts/snapshot-react-stories.ts"
   },
   "devDependencies": {
     "@storybook/react-vite": "^10.6.0",

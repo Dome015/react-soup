@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components/Dialog — Basic</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div class="soup-story-content">
+<button type="button" class="soup-button soup-button--primary soup-button--md" data-soup-dialog-open="soup-dialog-0">Open dialog</button>
+<dialog id="soup-dialog-0" class="soup-dialog" aria-label="Delete project" aria-describedby="_R_2_">
+<div class="soup-dialog__header">
+<div><h2>Delete project</h2><p id="_R_2_">This cannot be undone</p></div>
+<button type="button" aria-label="Close dialog" class="soup-icon-button soup-button--ghost soup-button--md"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19"></path></svg></button></div>
+<div class="soup-dialog__body"><p>Project files will be removed.</p></div>
+<div class="soup-dialog__footer"><button type="button" class="soup-button soup-button--secondary soup-button--md">Cancel</button><button type="button" class="soup-button soup-button--danger soup-button--md">Delete</button></div>
+</dialog>
+</div>
+</div>
+</body>
+</html>

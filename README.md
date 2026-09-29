@@ -1,29 +1,37 @@
 # React Soup
 
-A small, token-driven React component library for projects built with AI agents. It provides the requested UI components, a searchable and multi-select Dropdown input, sortable and paginated tables, a local SVG icon set, Storybook stories, and complete page examples. The visual language draws from Swiss graphic design: Helvetica, strong type hierarchy, aligned grids, square neutral surfaces, a blue primary accent, and red for destructive actions.
+A token driven UI library for React and plain HTML projects. Both implementations use the same stylesheet and visual language: Helvetica, sharp geometry, disciplined grids, a blue primary accent, and red for destructive actions.
 
-## Start
+## Explore and verify
 
 ```sh
 npm install
 npm run storybook
+npm run build-storybook
+npm run vanilla:stories
 ```
 
-`npm run typecheck` checks the TypeScript sources. `npm run build-storybook` builds a static Storybook.
+Open `http://127.0.0.1:6007/src/vanilla/stories/index.html` to compare any React story with its plain HTML counterpart in auto, light, and dark themes. The vanilla pages are standalone HTML. `npm run snapshot:vanilla` is a development scaffold that refreshes their initial markup from React stories; review each regenerated story and retain the authored HTML templates and interactions.
 
-## Use in a React project
+## Vendor into a React project
 
-Copy `src/components`, `src/styles`, and `src/index.ts` into the host project. React and React DOM are supplied by the host; there are no other runtime packages. Import the stylesheet once:
+Copy `src/react` **and** `src/shared`, including their components, stories, examples, and `AGENTS.md` guides. Import the shared stylesheet once and import components from `src/react/index.ts`:
 
 ```tsx
-import './path-to-react-soup/styles/index.css';
-import { Button, Card, Stack } from './path-to-react-soup';
+import './path-to-soup/shared/styles/index.css';
+import { Button, Card, Stack } from './path-to-soup/react';
 
 export function Example() {
   return <Card><Stack><h1>Ready to work</h1><Button>Get started</Button></Stack></Card>;
 }
 ```
 
-The theme follows the system by default. Set `data-theme="light"` or `data-theme="dark"` on an ancestor to override it; `data-theme="auto"` follows the system. All visual values live in `src/styles/theme.css`.
+The host supplies React and React DOM as peer dependencies. TypeScript and Storybook are development tools.
 
-Read [AGENTS.md](AGENTS.md) first when extending the library. Component guides, Storybook stories, and page examples provide API details and composition patterns.
+## Vendor into a plain web project
+
+Copy `src/vanilla` **and** `src/shared`, including the HTML stories, complete examples, and `AGENTS.md` guides. Link `src/shared/styles/index.css` once. Copy the semantic markup from `src/vanilla/stories` or `src/vanilla/examples` into your page. Buttons, fields, native inputs, cards, layout, and most status components need no Soup JavaScript. For a menu, searchable dropdown, tabs, sortable table, or similar interaction, load the small optional `src/vanilla/behavior.ts` module through your TypeScript build and keep the component's authored HTML template. Read each component guide for its markup and events.
+
+The default theme follows the system. Set `data-theme="light"` or `data-theme="dark"` on an ancestor to force a mode; `data-theme="auto"` follows the system. All aesthetic values live in `src/shared/styles/theme.css`.
+
+Read [AGENTS.md](AGENTS.md) when extending the library. The implementation guides explain component contracts and comparison checks.

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Document Review — SingleFile</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+
+<script type="module" src="./example.ts"></script>
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<main class="soup-example-page">
+<div class="soup-stack soup-gap--lg">
+<nav aria-label="Breadcrumb" class="soup-breadcrumbs">
+<ol>
+<li><a class="soup-link" href="/">Home</a></li>
+<li><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"></path></svg><span aria-current="page">Review files</span></li>
+</ol>
+</nav>
+<header><h1>Review files</h1><p class="soup-example-lead">Choose a file and read it locally before sharing.</p></header>
+<article class="soup-card">
+<form id="document-review-form" aria-busy="false">
+<div class="soup-stack soup-gap--lg">
+<div class="soup-field"><label class="soup-field__label" for="review-file">Document</label><input type="file" class="soup-file-upload" id="review-file" required="" aria-invalid="false" aria-describedby="review-file-description"/><p class="soup-field__description" id="review-file-description">Choose a file to review</p></div>
+<div class="soup-inline soup-gap--md soup-align--center soup-justify--between"><span role="status">Select a file to continue</span><button type="submit" class="soup-button soup-button--primary soup-button--md">Read file</button></div>
+</div>
+</form>
+</article>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body>
+</html>

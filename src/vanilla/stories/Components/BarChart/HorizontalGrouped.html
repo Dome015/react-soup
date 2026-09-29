@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components/BarChart — HorizontalGrouped</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div class="soup-story-content">
+<figure class="soup-chart"><figcaption class="soup-chart__header"><strong>Team output</strong><span>Compare completed and planned tasks</span></figcaption>
+<div class="soup-chart__plot"><svg viewBox="0 0 640 320" role="img" aria-label="Team output, horizontal bar chart"><g aria-hidden="true"><g><line class="soup-chart__grid" x1="108" x2="108" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="108" y="294" text-anchor="middle">0</text></g><g><line class="soup-chart__grid" x1="278.66666666666663" x2="278.66666666666663" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="278.66666666666663" y="294" text-anchor="middle">10</text></g><g><line class="soup-chart__grid" x1="449.3333333333333" x2="449.3333333333333" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="449.3333333333333" y="294" text-anchor="middle">20</text></g><g><line class="soup-chart__grid" x1="620" x2="620" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="620" y="294" text-anchor="middle">30</text></g></g><g aria-hidden="true"><text class="soup-chart__axis-label" x="98" y="62" text-anchor="end" dominant-baseline="middle">Design</text><text class="soup-chart__axis-label" x="98" y="146" text-anchor="end" dominant-baseline="middle">Engineering</text><text class="soup-chart__axis-label" x="98" y="230" text-anchor="end" dominant-baseline="middle">Research</text></g><g style="color:var(--soup-chart-color-1)"><rect class="soup-chart__bar" x="108" y="33.574400000000004" width="307.2" height="26.6112" tabindex="0" aria-label="Completed, Design: 18"><title>Completed, Design: 18</title></rect><rect class="soup-chart__bar" x="108" y="117.57440000000001" width="409.6" height="26.6112" tabindex="0" aria-label="Completed, Engineering: 24"><title>Completed, Engineering: 24</title></rect><rect class="soup-chart__bar" x="108" y="201.5744" width="204.8" height="26.6112" tabindex="0" aria-label="Completed, Research: 12"><title>Completed, Research: 12</title></rect></g><g style="color:var(--soup-chart-color-2)"><rect class="soup-chart__bar" x="108" y="63.8144" width="375.46666666666664" height="26.6112" tabindex="0" aria-label="Planned, Design: 22"><title>Planned, Design: 22</title></rect><rect class="soup-chart__bar" x="108" y="147.8144" width="477.8666666666667" height="26.6112" tabindex="0" aria-label="Planned, Engineering: 28"><title>Planned, Engineering: 28</title></rect><rect class="soup-chart__bar" x="108" y="231.8144" width="273.06666666666666" height="26.6112" tabindex="0" aria-label="Planned, Research: 16"><title>Planned, Research: 16</title></rect></g></svg></div>
+<ul class="soup-chart__legend" aria-label="Legend">
+<li style="color:var(--soup-chart-color-1)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Completed</span></li>
+<li style="color:var(--soup-chart-color-2)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Planned</span></li>
+</ul>
+<table class="soup-chart__data"><caption>Team output data</caption>
+<thead>
+<tr><th scope="col">Category</th><th scope="col">Completed</th><th scope="col">Planned</th></tr>
+</thead>
+<tbody>
+<tr><td>Design</td><td>18</td><td>22</td></tr>
+<tr><td>Engineering</td><td>24</td><td>28</td></tr>
+<tr><td>Research</td><td>12</td><td>16</td></tr>
+</tbody>
+</table>
+</figure>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components/Dropdown — Multiple</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div class="soup-story-content">
+<div class="soup-field"><label class="soup-field__label" for="story-types">Project types</label>
+<div class="soup-dropdown" data-value="design,research" data-multiple data-clearable>
+<div class="soup-dropdown__control"><button id="story-types" type="button" class="soup-dropdown__trigger" aria-label="Project types" aria-haspopup="listbox" aria-expanded="false" aria-controls="story-types-listbox"><span class="soup-dropdown__value">Design, Research</span><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></button><button type="button" aria-label="Clear Project types" class="soup-icon-button soup-button--secondary soup-button--md"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19"></path></svg></button></div>
+<template data-soup-options>
+<div data-value="design">
+<div><strong>Design</strong></div>
+</div>
+<div data-value="engineering">
+<div><strong>Engineering</strong></div>
+</div>
+<div data-value="research">
+<div><strong>Research</strong></div>
+</div>
+</template>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

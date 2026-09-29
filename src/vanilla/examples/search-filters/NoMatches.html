@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Search Filters — NoMatches</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+<script type="module" src="../../behavior.ts"></script>
+<script type="module" src="./example.ts"></script>
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<main class="soup-example-page">
+<div class="soup-stack soup-gap--lg">
+<header><h1>Find a project.</h1><p class="soup-example-lead">Search by name and narrow the list with filters.</p></header>
+<article class="soup-card">
+<div class="soup-grid soup-gap--md">
+<div class="soup-field"><label class="soup-field__label" for="filter-query">Search</label><input type="search" class="soup-input" id="filter-query" placeholder="Project name" value="Unlisted"/></div>
+<div class="soup-field"><label class="soup-field__label" for="filter-type">Type</label>
+<div class="soup-dropdown" data-multiple data-searchable data-clearable data-placeholder="All types">
+<div class="soup-dropdown__control"><button id="filter-type" type="button" class="soup-dropdown__trigger" aria-label="Project types" aria-haspopup="listbox" aria-expanded="false" aria-controls="filter-type-listbox"><span class="soup-dropdown__placeholder">All types</span><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></button></div>
+<template data-soup-options>
+<div data-value="Design">
+<div><strong>Design</strong></div>
+</div>
+<div data-value="Engineering">
+<div><strong>Engineering</strong></div>
+</div>
+<div data-value="Research">
+<div><strong>Research</strong></div>
+</div>
+</template>
+</div>
+</div>
+<div class="soup-field"><label class="soup-field__label" for="filter-status">Status</label><span class="soup-select-wrap"><select class="soup-input soup-select" id="filter-status"><option value="all" selected="">All statuses</option><option>Active</option><option>Draft</option></select><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></span></div>
+</div>
+</article>
+<div class="soup-inline soup-gap--md soup-align--center soup-justify--between"><strong role="status">0 results</strong><button type="button" class="soup-button soup-button--ghost soup-button--md">Clear filters</button></div>
+<div role="status" class="soup-alert soup-tone--info"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></svg>
+<div><strong>No matches</strong>
+<div>Try a different search or clear the filters.</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body>
+</html>

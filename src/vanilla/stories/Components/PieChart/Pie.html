@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components/PieChart — Pie</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div class="soup-story-content">
+<figure class="soup-chart soup-chart--pie"><figcaption class="soup-chart__header"><strong>Team allocation</strong><span>Share of planned work by discipline</span></figcaption>
+<div class="soup-chart__plot"><svg class="soup-chart__pie" viewBox="0 0 320 320" role="img" aria-label="Team allocation, pie chart"><path class="soup-chart__slice" d="M 160 160 L 160 36 A 124 124 0 0 1 219.73745558861273 268.66202832543905 Z" style="color:var(--soup-chart-color-1)" tabindex="0" aria-label="Design: 42% (42%)"><title>Design: 42% (42%)</title></path><path class="soup-chart__slice" d="M 160 160 L 219.73745558861273 268.66202832543905 A 124 124 0 0 1 38.19638090964261 183.2352830086299 Z" style="color:var(--soup-chart-color-2)" tabindex="0" aria-label="Engineering: 30% (30%)"><title>Engineering: 30% (30%)</title></path><path class="soup-chart__slice" d="M 160 160 L 38.19638090964261 183.2352830086299 A 124 124 0 0 1 87.11462871573332 59.68189269750653 Z" style="color:var(--soup-chart-color-3)" tabindex="0" aria-label="Research: 18% (18%)"><title>Research: 18% (18%)</title></path><path class="soup-chart__slice" d="M 160 160 L 87.11462871573332 59.68189269750653 A 124 124 0 0 1 159.99999999999997 36 Z" style="color:var(--soup-chart-color-4)" tabindex="0" aria-label="Operations: 10% (10%)"><title>Operations: 10% (10%)</title></path></svg></div>
+<ul class="soup-chart__legend" aria-label="Legend">
+<li style="color:var(--soup-chart-color-1)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Design</span></li>
+<li style="color:var(--soup-chart-color-2)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Engineering</span></li>
+<li style="color:var(--soup-chart-color-3)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Research</span></li>
+<li style="color:var(--soup-chart-color-4)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Operations</span></li>
+</ul>
+<table class="soup-chart__data"><caption>Team allocation data</caption>
+<thead>
+<tr><th scope="col">Category</th><th scope="col">Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Design</td><td>42</td></tr>
+<tr><td>Engineering</td><td>30</td></tr>
+<tr><td>Research</td><td>18</td></tr>
+<tr><td>Operations</td><td>10</td></tr>
+</tbody>
+</table>
+</figure>
+</div>
+</div>
+</body>
+</html>

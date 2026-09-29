@@ -1,0 +1,7 @@
+# Vanilla story reference
+
+Each HTML page under `Components/` and `Foundations/` captures the matching React Storybook story's initial DOM. Open it with the shared stylesheet in a real browser. The filename is the React story export name, so the states can be compared one for one. The pages contain semantic HTML and shared `soup-` classes; no component factory is needed to use the markup.
+
+These snapshots are a visual baseline. When a story includes a state change or an interactive component, extend its vanilla story with typed progressive enhancement and verify pointer, keyboard, focus, disabled, and empty behavior. Keep the story's markup and interaction teaching useful to an agent copying it into a non-React project. New states should be added to both implementations.
+
+The complete page story states live in `../examples` so their HTML is not duplicated here. `ChartFromData.html` demonstrates the four opt-in typed chart renderers with an existing figure rather than a component factory. Run `npm run snapshot:vanilla` from the repository root after changing React story markup; the script captures initial DOM, then adds authored templates for interactions that React only renders after opening. Review its output and recheck dynamic states. `index.html` is a side-by-side comparison gallery that expects `storybook-static` from `npm run build-storybook`.

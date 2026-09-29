@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foundations/Visual Rhythm — Controls</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<div class="soup-stack soup-gap--lg">
+<div class="soup-inline soup-gap--md soup-align--center soup-justify--start"><button type="button" class="soup-button soup-button--primary soup-button--md">Primary action</button><button type="button" class="soup-button soup-button--secondary soup-button--md">Secondary action</button>
+<div class="soup-menu"><button type="button" class="soup-menu__trigger" aria-label="Project actions" aria-haspopup="menu" aria-expanded="false" aria-controls="_R_d_"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle></svg></button>
+<template data-soup-menu><button type="button" role="menuitem" data-action="Edit project" class="soup-menu__item"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20h4l11-11-4-4L4 16v4Z"></path><path d="m13 7 4 4"></path></svg>Edit project</button><button type="button" role="menuitem" data-action="Delete project" class="soup-menu__item soup-menu__item--danger"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 10v7M14 10v7"></path></svg>Delete project</button></template>
+</div>
+<div class="soup-popover" data-label="Project details"><button type="button" class="soup-popover__trigger" aria-expanded="false" aria-controls="_R_h_">Project details</button>
+<template data-soup-popover>
+<div class="soup-stack soup-gap--sm"><strong>Atlas</strong><span>Updated today</span></div>
+</template>
+</div>
+</div>
+<div class="soup-grid soup-gap--md">
+<div class="soup-field"><label class="soup-field__label" for="rhythm-name">Project name</label><input type="text" class="soup-input" id="rhythm-name" value="Atlas"/></div>
+<div class="soup-field"><label class="soup-field__label" for="rhythm-status">Status</label><span class="soup-select-wrap"><select class="soup-input soup-select" id="rhythm-status"><option value="active" selected="">Active</option><option value="draft">Draft</option></select><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></span></div>
+<div class="soup-field"><label class="soup-field__label" for="rhythm-team">Team</label>
+<div class="soup-dropdown" data-value="design">
+<div class="soup-dropdown__control"><button id="rhythm-team" type="button" class="soup-dropdown__trigger" aria-label="Team" aria-haspopup="listbox" aria-expanded="false" aria-controls="rhythm-team-listbox"><span class="soup-dropdown__value">Design</span><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></button></div>
+<template data-soup-options>
+<div data-value="design">
+<div><strong>Design</strong></div>
+</div>
+<div data-value="engineering">
+<div><strong>Engineering</strong></div>
+</div>
+</template>
+</div>
+</div>
+</div>
+<div class="soup-tabs">
+<div role="tablist" aria-label="Project sections" class="soup-tabs__list"><button id="_R_3_-tab-overview" role="tab" type="button" aria-selected="true" aria-controls="_R_3_-panel-overview" tabindex="0">Overview</button><button id="_R_3_-tab-activity" role="tab" type="button" aria-selected="false" aria-controls="_R_3_-panel-activity" tabindex="-1">Activity</button></div>
+<div id="_R_3_-panel-overview" role="tabpanel" aria-labelledby="_R_3_-tab-overview" tabindex="0" class="soup-tabs__panel">
+<article class="soup-card"><h2>Overview</h2><p>Project details stay readable beside the controls.</p></article>
+</div>
+<div id="_R_3_-panel-activity" role="tabpanel" aria-labelledby="_R_3_-tab-activity" hidden="" tabindex="0" class="soup-tabs__panel">
+<article class="soup-card"><h2>Activity</h2><p>Recent updates appear here.</p></article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

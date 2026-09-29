@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Authentication — CompletePattern</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+<script type="module" src="../../behavior.ts"></script>
+<script type="module" src="./example.ts"></script>
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<main class="soup-auth">
+<article class="soup-card">
+<div class="soup-stack soup-gap--lg">
+<header><h1>Welcome back.</h1><p class="soup-example-lead">Sign in to continue to your workspace.</p></header>
+<form>
+<div class="soup-stack soup-gap--md">
+<div class="soup-field"><label class="soup-field__label" for="auth-email">Email address</label><input type="email" class="soup-input" id="auth-email" autoComplete="email" required="" value=""/></div>
+<div class="soup-field"><label class="soup-field__label" for="auth-password">Password</label><input type="password" class="soup-input" id="auth-password" autoComplete="current-password" required="" value=""/></div>
+<button type="submit" class="soup-button soup-button--primary soup-button--md">Sign in</button></div>
+</form>
+<hr role="separator" aria-orientation="horizontal" class="soup-separator soup-separator--horizontal"/><p>New here? <a class="soup-link" href="#create-account">Create an account</a></p></div>
+</article>
+</main>
+<div class="soup-toast-viewport" aria-label="Notifications"></div>
+</div>
+</div>
+</body>
+</html>

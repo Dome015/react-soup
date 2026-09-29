@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react-vite';
-import '../src/styles/index.css';
-import '../src/examples/examples.css';
+import '../src/shared/styles/index.css';
+import '../src/shared/styles/examples.css';
 
 const preview: Preview = {
   globalTypes: {

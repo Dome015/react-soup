@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components/Input — DateAndTime</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div class="soup-story-content">
+<div class="soup-stack soup-gap--md">
+<div class="soup-field"><label class="soup-field__label" for="input-date">Due date</label><input type="date" class="soup-input" id="input-date" min="2026-10-01" max="2026-12-31" aria-describedby="input-date-description" value="2026-10-15"/><p class="soup-field__description" id="input-date-description">Choose a date in your local calendar</p></div>
+<div class="soup-field"><label class="soup-field__label" for="input-time">Start time</label><input type="time" class="soup-input" id="input-time" step="900" aria-describedby="input-time-description" value="09:30"/><p class="soup-field__description" id="input-time-description">Use your local time</p></div>
+<div class="soup-field"><label class="soup-field__label" for="input-datetime">Meeting date and time</label><input type="datetime-local" class="soup-input" id="input-datetime" aria-describedby="input-datetime-description" value="2026-10-15T09:30"/><p class="soup-field__description" id="input-datetime-description">Stored as local date and time; choose a timezone separately when needed</p></div>
+</div>
+</div>
+</div>
+</body>
+</html>

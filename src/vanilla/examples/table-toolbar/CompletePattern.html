@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Table Toolbar — CompletePattern</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+
+<script type="module" src="./example.ts"></script>
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<main class="soup-example-page">
+<div class="soup-stack soup-gap--lg">
+<div class="soup-inline soup-gap--md soup-align--end soup-justify--between">
+<header><h1>Team members</h1></header>
+<button type="button" class="soup-button soup-button--primary soup-button--md">Invite member</button></div>
+<article class="soup-card">
+<div class="soup-stack soup-gap--md">
+<div class="soup-inline soup-gap--md soup-align--center soup-justify--between">
+<div class="soup-example-toolbar-search"><input type="search" class="soup-input" aria-label="Search team members" placeholder="Search members" value=""/></div>
+<div class="soup-inline soup-gap--md soup-align--center soup-justify--start"><span class="soup-select-wrap"><select class="soup-input soup-select" aria-label="Filter by role"><option value="all" selected="">All roles</option><option>Owner</option><option>Editor</option><option>Viewer</option></select><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></span><button type="button" class="soup-button soup-button--secondary soup-button--md">Export</button></div>
+</div>
+<div class="soup-table-scroll" role="region" aria-label="Scrollable table" tabindex="0">
+<table class="soup-table">
+<thead>
+<tr><th scope="col">Member</th><th scope="col">Role</th><th scope="col">Status</th></tr>
+</thead>
+<tbody>
+<tr><td>
+<div class="soup-inline soup-gap--sm soup-align--center soup-justify--start"><span class="soup-avatar" role="img" aria-label="Ada Lovelace">AL</span>Ada Lovelace</div>
+</td><td>Owner</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>
+<div class="soup-inline soup-gap--sm soup-align--center soup-justify--start"><span class="soup-avatar" role="img" aria-label="Grace Hopper">GH</span>Grace Hopper</div>
+</td><td>Editor</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>
+<div class="soup-inline soup-gap--sm soup-align--center soup-justify--start"><span class="soup-avatar" role="img" aria-label="Lin Chen">LC</span>Lin Chen</div>
+</td><td>Viewer</td><td><span class="soup-badge soup-tone--warning">Invited</span></td></tr>
+</tbody>
+</table>
+</div>
+<span class="soup-example-caption">Showing 3 of 3 members</span></div>
+</article>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body>
+</html>

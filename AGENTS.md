@@ -4,27 +4,28 @@ React Soup is a small, vendorable React component library. Its visual direction 
 
 ## Golden rules
 
-1. **No hardcoded aesthetic values in component or example CSS.** Every color, spacing value, font metric, border width, radius, shadow, size, duration, opacity, and layout measurement belongs in `src/styles/theme.css` as a semantic `--soup-*` token. Reference those tokens with `var(...)` everywhere else. Add a token only after checking for a suitable existing one. Keep light and dark values for color tokens together in the theme.
+1. **No hardcoded aesthetic values in component or example CSS.** Every color, spacing value, font metric, border width, radius, shadow, size, duration, opacity, and layout measurement belongs in `src/shared/styles/theme.css` as a semantic `--soup-*` token. Reference those tokens with `var(...)` everywhere else. Add a token only after checking for a suitable existing one. Keep light and dark values for color tokens together in the theme.
 2. **Use one visual language.** Reuse the standard control height, spacing scale, typography, border, and focus treatment. Avoid one-off variants or new colors for a single component. Prefer composition of existing components.
    Keep rectangular surfaces square. Use borders when they clarify an interactive edge; adjacent trigger and popup borders should overlap. Circular avatar and switch shapes are intentional exceptions. Do not add eyebrow text or eyebrow styling to examples.
    Text controls, action triggers, tabs, and tree rows share the medium control height and small control text tokens. Icon-only triggers use the icon control width. Card, dialog, and chart section titles share the large title token. Keep example-wide element selectors low specificity so they cannot override component internals.
 3. **Support three theme states.** With no `data-theme` attribute, or with `data-theme="auto"`, system color preference selects light or dark. `data-theme="light"` and `data-theme="dark"` force a mode. Check new components in both explicit modes and auto mode.
-4. **Keep vendored runtime code self-contained.** React and React DOM are peer dependencies supplied by the host project. Components use only React and local source files. Icons are maintained locally in `src/components/Icon`; do not add an icon package casually. Storybook and build tools are development-only and must not leak into `src/components`.
+4. **Keep vendored runtime code self-contained.** Vendor `src/shared` with either implementation. React and React DOM are peer dependencies supplied by a React host; vanilla runtime code uses browser APIs and no framework. TypeScript is a development tool in both implementations. Shared icons live in `src/shared`; do not add an icon package casually. Storybook and build tools are development-only and must not leak into runtime components.
 5. **Preserve accessibility.** Use semantic HTML, labels, visible focus, keyboard behavior, and native controls where possible. Do not replace a semantic element with a generic div for appearance.
    Prefer native date/time and file Inputs and native Progress. A loading Button must keep a meaningful visible label and prevent repeat activation. Breadcrumbs need real ancestor links and a marked current page.
 6. **Document changes for agents.** Update the nearest `AGENTS.md`, the component's Storybook story, relevant examples, and this guide if conventions change.
+7. **Keep the implementations equivalent.** Every public component, story, and example in `src/react` has a counterpart in `src/vanilla`. Compare the rendered results side by side in light, dark, and auto modes, at narrow and wide widths, and exercise the same interaction and accessibility states. Shared behavior or visual values belong in `src/shared` instead of duplicated source.
 
 ## Where to go
 
-- `src/styles/AGENTS.md`: token and theme contract; read before changing CSS.
-- `src/components/AGENTS.md`: component inventory and selection guide. Each component directory has its own `AGENTS.md` with API guidance and examples.
-- `src/stories/AGENTS.md`: Storybook conventions and interactive states.
-- `src/examples/AGENTS.md`: complete page and pattern examples, with a guide in every example directory.
+- `src/shared/AGENTS.md` and `src/shared/styles/AGENTS.md`: shared code, tokens, and theme contract; read before changing CSS.
+- `src/react/AGENTS.md` and `src/react/components/AGENTS.md`: React component inventory and selection guide.
+- `src/vanilla/AGENTS.md` and `src/vanilla/components/AGENTS.md`: semantic markup, TypeScript controllers, and selection guide.
+- Each implementation's `stories/AGENTS.md` and `examples/AGENTS.md`: interactive states and complete page patterns.
 - `vendor/AGENTS.md`: runtime dependency policy and vendor inventory.
 
-## Vendor into another React project
+## Vendor into another project
 
-Copy `src/components`, `src/styles`, and `src/index.ts`. Import `src/styles/index.css` once in the host app and import components from the copied `src/index.ts`. The host must provide compatible React and React DOM. Do not copy Storybook, examples, or development packages unless useful for reference. Keep the AGENTS files with the copied code for future agents.
+Always copy `src/shared` and one implementation directory: `src/react` for React projects or `src/vanilla` for framework-free projects. Include that implementation's `components`, `stories`, `examples`, and AGENTS files so future agents have working usage patterns. React projects also copy `src/react/index.ts` and may merge the root `.storybook` configuration. Vanilla projects use the HTML examples directly; the parity gallery is a development aid that expects this repository's React Storybook build. Import `src/shared/styles/index.css` once in the host app. React projects supply compatible React and React DOM. Vanilla projects compile the optional TypeScript controllers with the host's development tooling only when the markup needs behavior. Storybook and TypeScript packages are development dependencies; neither is a vanilla browser runtime dependency.
 
 ## Work order for additions
 

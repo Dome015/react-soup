@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>React Soup — vanilla HTML parity</title>
+  <link rel="stylesheet" href="../../shared/styles/index.css">
+  <link rel="stylesheet" href="./gallery.css">
+  <script type="module" src="./gallery.ts"></script>
+</head>
+<body>
+  <main class="soup-container soup-gallery">
+    <h1>React and vanilla story comparison</h1>
+    <div class="soup-inline soup-gap--md soup-align--center soup-justify--start">
+      <label for="story">Story</label><select id="story" class="soup-input soup-gallery__select"></select>
+      <label for="theme">Theme</label><select id="theme" class="soup-input soup-gallery__select"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option></select>
+    </div>
+    <div class="soup-gallery__comparison">
+      <section><h2>React reference</h2><iframe id="react-frame" title="React reference story"></iframe></section>
+      <section><h2>Vanilla HTML</h2><iframe id="vanilla-frame" title="Vanilla HTML story"></iframe></section>
+    </div>
+  </main>
+</body>
+</html>

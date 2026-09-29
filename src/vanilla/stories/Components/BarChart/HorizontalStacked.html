@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components/BarChart — HorizontalStacked</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div class="soup-story-content">
+<figure class="soup-chart"><figcaption class="soup-chart__header"><strong>Work by category</strong></figcaption>
+<div class="soup-chart__plot"><svg viewBox="0 0 640 320" role="img" aria-label="Work by category, horizontal stacked bar chart"><g aria-hidden="true"><g><line class="soup-chart__grid" x1="108" x2="108" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="108" y="294" text-anchor="middle">0</text></g><g><line class="soup-chart__grid" x1="236" x2="236" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="236" y="294" text-anchor="middle">10</text></g><g><line class="soup-chart__grid" x1="364" x2="364" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="364" y="294" text-anchor="middle">20</text></g><g><line class="soup-chart__grid" x1="492" x2="492" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="492" y="294" text-anchor="middle">30</text></g><g><line class="soup-chart__grid" x1="620" x2="620" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="620" y="294" text-anchor="middle">40</text></g></g><g aria-hidden="true"><text class="soup-chart__axis-label" x="98" y="62" text-anchor="end" dominant-baseline="middle">Current</text><text class="soup-chart__axis-label" x="98" y="146" text-anchor="end" dominant-baseline="middle">Planned</text><text class="soup-chart__axis-label" x="98" y="230" text-anchor="end" dominant-baseline="middle">Backlog</text></g><g style="color:var(--soup-chart-color-1)"><rect class="soup-chart__bar" x="108" y="35.3888" width="256" height="53.2224" tabindex="0" aria-label="Design, Current: 20"><title>Design, Current: 20</title></rect><rect class="soup-chart__bar" x="108" y="119.3888" width="153.60000000000002" height="53.2224" tabindex="0" aria-label="Design, Planned: 12"><title>Design, Planned: 12</title></rect><rect class="soup-chart__bar" x="108" y="203.3888" width="204.8" height="53.2224" tabindex="0" aria-label="Design, Backlog: 16"><title>Design, Backlog: 16</title></rect></g><g style="color:var(--soup-chart-color-2)"><rect class="soup-chart__bar" x="364" y="35.3888" width="192" height="53.2224" tabindex="0" aria-label="Engineering, Current: 15"><title>Engineering, Current: 15</title></rect><rect class="soup-chart__bar" x="261.6" y="119.3888" width="230.39999999999998" height="53.2224" tabindex="0" aria-label="Engineering, Planned: 18"><title>Engineering, Planned: 18</title></rect><rect class="soup-chart__bar" x="312.8" y="203.3888" width="153.59999999999997" height="53.2224" tabindex="0" aria-label="Engineering, Backlog: 12"><title>Engineering, Backlog: 12</title></rect></g></svg></div>
+<ul class="soup-chart__legend" aria-label="Legend">
+<li style="color:var(--soup-chart-color-1)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Design</span></li>
+<li style="color:var(--soup-chart-color-2)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Engineering</span></li>
+</ul>
+<table class="soup-chart__data"><caption>Work by category data</caption>
+<thead>
+<tr><th scope="col">Category</th><th scope="col">Design</th><th scope="col">Engineering</th></tr>
+</thead>
+<tbody>
+<tr><td>Current</td><td>20</td><td>15</td></tr>
+<tr><td>Planned</td><td>12</td><td>18</td></tr>
+<tr><td>Backlog</td><td>16</td><td>12</td></tr>
+</tbody>
+</table>
+</figure>
+</div>
+</div>
+</body>
+</html>

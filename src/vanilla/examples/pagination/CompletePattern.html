@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Pagination — CompletePattern</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+<script type="module" src="../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<main class="soup-example-page">
+<div class="soup-stack soup-gap--lg">
+<header><h1>Project directory</h1><p class="soup-example-lead">Sort the directory and move between pages.</p></header>
+<article class="soup-card">
+<div class="soup-table-data" data-page-size="5">
+<div class="soup-table-scroll" role="region" aria-label="Scrollable table" tabindex="0">
+<table class="soup-table" aria-label="Project directory">
+<thead>
+<tr><th scope="col"><button type="button" class="soup-table__sort">Name<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th><th scope="col"><button type="button" class="soup-table__sort">Status<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th></tr>
+</thead>
+<tbody>
+<tr><td>Project 001</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 002</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 003</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 004</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 005</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+</tbody>
+</table>
+</div>
+<div class="soup-table__pagination">
+<nav class="soup-pagination" aria-label="Pagination"><span class="soup-pagination__summary">Page 1 of 25</span>
+<div class="soup-pagination__controls"><button type="button" class="soup-pagination__button" aria-label="First page" disabled=""><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5v14m13-14-7 7 7 7"></path></svg></button><button type="button" class="soup-pagination__button" aria-label="Previous page" disabled=""><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 5-7 7 7 7M5 12h14"></path></svg></button><button type="button" class="soup-pagination__button soup-pagination__page" aria-label="Page 1" aria-current="page" data-boundary="true">1</button><button type="button" class="soup-pagination__button soup-pagination__page" aria-label="Page 2">2</button><span class="soup-pagination__ellipsis" aria-hidden="true">…</span><button type="button" class="soup-pagination__button soup-pagination__page" aria-label="Page 25" data-boundary="true">25</button><button type="button" class="soup-pagination__button" aria-label="Next page"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 5 7 7-7 7M19 12H5"></path></svg></button><button type="button" class="soup-pagination__button" aria-label="Last page"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 5v14M6 5l7 7-7 7"></path></svg></button></div>
+</nav>
+</div>
+<template data-soup-rows>
+<tr><td>Project 001</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 002</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 003</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 004</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 005</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 006</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 007</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 008</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 009</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 010</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 011</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 012</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 013</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 014</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 015</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 016</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 017</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 018</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 019</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 020</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 021</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 022</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 023</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 024</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 025</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 026</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 027</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 028</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 029</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 030</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 031</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 032</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 033</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 034</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 035</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 036</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 037</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 038</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 039</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 040</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 041</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 042</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 043</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 044</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 045</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 046</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 047</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 048</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 049</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 050</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 051</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 052</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 053</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 054</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 055</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 056</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 057</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 058</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 059</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 060</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 061</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 062</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 063</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 064</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 065</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 066</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 067</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 068</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 069</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 070</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 071</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 072</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 073</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 074</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 075</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 076</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 077</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 078</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 079</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 080</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 081</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 082</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 083</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 084</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 085</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 086</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 087</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 088</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 089</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 090</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 091</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 092</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 093</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 094</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 095</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 096</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 097</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 098</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 099</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 100</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 101</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 102</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 103</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 104</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 105</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 106</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 107</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 108</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 109</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 110</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 111</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 112</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 113</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 114</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 115</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 116</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 117</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 118</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 119</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 120</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 121</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td></tr>
+<tr><td>Project 122</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+<tr><td>Project 123</td><td><span class="soup-badge soup-tone--success">Active</span></td></tr>
+</template>
+</div>
+</article>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body>
+</html>

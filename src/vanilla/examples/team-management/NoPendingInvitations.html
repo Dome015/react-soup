@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Team Management — NoPendingInvitations</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+<script type="module" src="../../behavior.ts"></script>
+<script type="module" src="./example.ts"></script>
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<main class="soup-example-page">
+<div class="soup-stack soup-gap--lg">
+<div class="soup-inline soup-gap--md soup-align--end soup-justify--between">
+<header><h1>Team access</h1><p class="soup-example-lead">Manage who can work in this workspace and review pending invitations.</p></header>
+<button type="button" class="soup-button soup-button--primary soup-button--md" data-soup-dialog-open="soup-dialog-0">Invite member</button></div>
+<div role="status" class="soup-alert soup-tone--info"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></svg>
+<div><strong>Access is tied to a role</strong>
+<div>Editors can change workspace content. Viewers can read it. Only the owner can manage team access.</div>
+</div>
+</div>
+<div class="soup-tabs">
+<div role="tablist" aria-label="Team access sections" class="soup-tabs__list"><button id="_R_d_-tab-members" role="tab" type="button" aria-selected="false" aria-controls="_R_d_-panel-members" tabindex="-1">Members (3)</button><button id="_R_d_-tab-invitations" role="tab" type="button" aria-selected="true" aria-controls="_R_d_-panel-invitations" tabindex="0">Invitations (0)</button></div>
+<div id="_R_d_-panel-members" role="tabpanel" aria-labelledby="_R_d_-tab-members" hidden="" tabindex="0" class="soup-tabs__panel">
+<article class="soup-card">
+<div class="soup-stack soup-gap--md"><h2>Members</h2>
+<div class="soup-table-data">
+<div class="soup-table-scroll" role="region" aria-label="Scrollable table" tabindex="0">
+<table class="soup-table" aria-label="Workspace members">
+<thead>
+<tr><th scope="col"><button type="button" class="soup-table__sort">Member<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th><th scope="col"><button type="button" class="soup-table__sort">Email<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th><th scope="col"><button type="button" class="soup-table__sort">Role<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th><th scope="col">Actions</th></tr>
+</thead>
+<tbody>
+<tr><td>
+<div class="soup-inline soup-gap--sm soup-align--center soup-justify--start"><span class="soup-avatar" role="img" aria-label="Ada Lovelace">AL</span><strong>Ada Lovelace</strong></div>
+</td><td>ada@example.com</td><td><span class="soup-badge soup-tone--info">Owner</span></td><td><span class="soup-example-caption">Workspace owner</span></td></tr>
+<tr><td>
+<div class="soup-inline soup-gap--sm soup-align--center soup-justify--start"><span class="soup-avatar" role="img" aria-label="Grace Hopper">GH</span><strong>Grace Hopper</strong></div>
+</td><td>grace@example.com</td><td><span class="soup-badge soup-tone--neutral">Editor</span></td><td>
+<div class="soup-menu" data-align="end"><button type="button" class="soup-menu__trigger" aria-label="Change role for Grace Hopper" aria-haspopup="menu" aria-expanded="false" aria-controls="_R_156dd_"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle></svg></button>
+<template data-soup-menu><button type="button" role="menuitem" data-action="Make editor" class="soup-menu__item">Make editor</button><button type="button" role="menuitem" data-action="Make viewer" class="soup-menu__item">Make viewer</button></template>
+</div>
+</td></tr>
+<tr><td>
+<div class="soup-inline soup-gap--sm soup-align--center soup-justify--start"><span class="soup-avatar" role="img" aria-label="Lin Chen">LC</span><strong>Lin Chen</strong></div>
+</td><td>lin@example.com</td><td><span class="soup-badge soup-tone--neutral">Viewer</span></td><td>
+<div class="soup-menu" data-align="end"><button type="button" class="soup-menu__trigger" aria-label="Change role for Lin Chen" aria-haspopup="menu" aria-expanded="false" aria-controls="_R_176dd_"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle></svg></button>
+<template data-soup-menu><button type="button" role="menuitem" data-action="Make editor" class="soup-menu__item">Make editor</button><button type="button" role="menuitem" data-action="Make viewer" class="soup-menu__item">Make viewer</button></template>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div id="_R_d_-panel-invitations" role="tabpanel" aria-labelledby="_R_d_-tab-invitations" tabindex="0" class="soup-tabs__panel">
+<article class="soup-card">
+<div class="soup-stack soup-gap--md"><h2>Pending invitations</h2>
+<div role="status" class="soup-alert soup-tone--info"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></svg>
+<div><strong>No pending invitations</strong>
+<div>There are no invitations waiting for a response. Invite someone new when you are ready.</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+<dialog id="soup-dialog-0" class="soup-dialog" aria-label="Invite a member" aria-describedby="_R_h_">
+<div class="soup-dialog__header">
+<div><h2>Invite a member</h2><p id="_R_h_">The person will receive access after accepting the invitation.</p></div>
+<button type="button" aria-label="Close dialog" class="soup-icon-button soup-button--ghost soup-button--md"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19"></path></svg></button></div>
+<div class="soup-dialog__body">
+<form id="team-invitation-form">
+<div class="soup-stack soup-gap--md">
+<div class="soup-field"><label class="soup-field__label" for="team-invite-email">Email address</label><input type="email" class="soup-input" id="team-invite-email" autoComplete="email" aria-invalid="false" required="" value=""/></div>
+<div class="soup-field"><label class="soup-field__label" for="team-invite-role">Role</label><span class="soup-select-wrap"><select class="soup-input soup-select" id="team-invite-role" aria-describedby="team-invite-role-description"><option value="Viewer" selected="">Viewer</option><option value="Editor">Editor</option></select><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></span><p class="soup-field__description" id="team-invite-role-description">You can change this role after they join.</p></div>
+</div>
+</form>
+</div>
+<div class="soup-dialog__footer"><button type="button" class="soup-button soup-button--secondary soup-button--md">Cancel</button><button type="submit" class="soup-button soup-button--primary soup-button--md" form="team-invitation-form">Send invitation</button></div>
+</dialog>
+<dialog id="soup-dialog-1" class="soup-dialog" aria-label="Revoke invitation?" aria-describedby="_R_l_">
+<div class="soup-dialog__header">
+<div><h2>Revoke invitation?</h2><p id="_R_l_">The invitation link will stop working.</p></div>
+<button type="button" aria-label="Close dialog" class="soup-icon-button soup-button--ghost soup-button--md"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19"></path></svg></button></div>
+<div class="soup-dialog__body"><p>Revoke the invitation for <strong></strong>?</p></div>
+<div class="soup-dialog__footer"><button type="button" class="soup-button soup-button--secondary soup-button--md">Cancel</button><button type="button" class="soup-button soup-button--danger soup-button--md">Revoke invitation</button></div>
+</dialog>
+</div>
+</main>
+</div>
+<div class="soup-toast-viewport" aria-label="Notifications"></div>
+</div>
+</div>
+</body>
+</html>

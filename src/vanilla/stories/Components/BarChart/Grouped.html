@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components/BarChart — Grouped</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div class="soup-story-content">
+<figure class="soup-chart"><figcaption class="soup-chart__header"><strong>Completed tasks</strong><span>Compare teams within each quarter</span></figcaption>
+<div class="soup-chart__plot"><svg viewBox="0 0 640 320" role="img" aria-label="Completed tasks, bar chart"><g aria-hidden="true"><g><line class="soup-chart__grid" x1="60" x2="620" y1="272" y2="272"></line><text class="soup-chart__axis-label" x="50" y="272" text-anchor="end" dominant-baseline="middle">0</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="209" y2="209"></line><text class="soup-chart__axis-label" x="50" y="209" text-anchor="end" dominant-baseline="middle">10</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="146" y2="146"></line><text class="soup-chart__axis-label" x="50" y="146" text-anchor="end" dominant-baseline="middle">20</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="83" y2="83"></line><text class="soup-chart__axis-label" x="50" y="83" text-anchor="end" dominant-baseline="middle">30</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="20" y2="20"></line><text class="soup-chart__axis-label" x="50" y="20" text-anchor="end" dominant-baseline="middle">40</text></g></g><g aria-hidden="true"><text class="soup-chart__axis-label" x="130" y="298" text-anchor="middle">Q1</text><text class="soup-chart__axis-label" x="270" y="298" text-anchor="middle">Q2</text><text class="soup-chart__axis-label" x="410" y="298" text-anchor="middle">Q3</text><text class="soup-chart__axis-label" x="550" y="298" text-anchor="middle">Q4</text></g><g style="color:var(--soup-chart-color-1)"><rect class="soup-chart__bar" x="81.616" y="158.6" width="29.568" height="113.4" tabindex="0" aria-label="Design, Q1: 18"><title>Design, Q1: 18</title></rect><rect class="soup-chart__bar" x="221.61599999999999" y="108.19999999999999" width="29.568" height="163.8" tabindex="0" aria-label="Design, Q2: 26"><title>Design, Q2: 26</title></rect><rect class="soup-chart__bar" x="361.61600000000004" y="133.39999999999998" width="29.568" height="138.60000000000002" tabindex="0" aria-label="Design, Q3: 22"><title>Design, Q3: 22</title></rect><rect class="soup-chart__bar" x="501.61600000000004" y="57.80000000000001" width="29.568" height="214.2" tabindex="0" aria-label="Design, Q4: 34"><title>Design, Q4: 34</title></rect></g><g style="color:var(--soup-chart-color-2)"><rect class="soup-chart__bar" x="115.216" y="120.80000000000001" width="29.568" height="151.2" tabindex="0" aria-label="Engineering, Q1: 24"><title>Engineering, Q1: 24</title></rect><rect class="soup-chart__bar" x="255.21599999999998" y="139.7" width="29.568" height="132.3" tabindex="0" aria-label="Engineering, Q2: 21"><title>Engineering, Q2: 21</title></rect><rect class="soup-chart__bar" x="395.21600000000007" y="76.69999999999999" width="29.568" height="195.3" tabindex="0" aria-label="Engineering, Q3: 31"><title>Engineering, Q3: 31</title></rect><rect class="soup-chart__bar" x="535.216" y="89.30000000000001" width="29.568" height="182.7" tabindex="0" aria-label="Engineering, Q4: 29"><title>Engineering, Q4: 29</title></rect></g><g style="color:var(--soup-chart-color-3)"><rect class="soup-chart__bar" x="148.816" y="209" width="29.568" height="63" tabindex="0" aria-label="Research, Q1: 10"><title>Research, Q1: 10</title></rect><rect class="soup-chart__bar" x="288.81600000000003" y="177.5" width="29.568" height="94.5" tabindex="0" aria-label="Research, Q2: 15"><title>Research, Q2: 15</title></rect><rect class="soup-chart__bar" x="428.81600000000003" y="164.9" width="29.568" height="107.1" tabindex="0" aria-label="Research, Q3: 17"><title>Research, Q3: 17</title></rect><rect class="soup-chart__bar" x="568.816" y="133.39999999999998" width="29.568" height="138.60000000000002" tabindex="0" aria-label="Research, Q4: 22"><title>Research, Q4: 22</title></rect></g></svg></div>
+<ul class="soup-chart__legend" aria-label="Legend">
+<li style="color:var(--soup-chart-color-1)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Design</span></li>
+<li style="color:var(--soup-chart-color-2)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Engineering</span></li>
+<li style="color:var(--soup-chart-color-3)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Research</span></li>
+</ul>
+<table class="soup-chart__data"><caption>Completed tasks data</caption>
+<thead>
+<tr><th scope="col">Category</th><th scope="col">Design</th><th scope="col">Engineering</th><th scope="col">Research</th></tr>
+</thead>
+<tbody>
+<tr><td>Q1</td><td>18</td><td>24</td><td>10</td></tr>
+<tr><td>Q2</td><td>26</td><td>21</td><td>15</td></tr>
+<tr><td>Q3</td><td>22</td><td>31</td><td>17</td></tr>
+<tr><td>Q4</td><td>34</td><td>29</td><td>22</td></tr>
+</tbody>
+</table>
+</figure>
+</div>
+</div>
+</body>
+</html>

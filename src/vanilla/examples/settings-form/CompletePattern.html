@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Settings Form — CompletePattern</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+<script type="module" src="../../behavior.ts"></script>
+<script type="module" src="./example.ts"></script>
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<main class="soup-example-page">
+<div class="soup-stack soup-gap--lg">
+<header><h1>Settings</h1><p class="soup-example-lead">Keep your workspace details and notifications up to date.</p></header>
+<div class="soup-tabs">
+<div role="tablist" aria-label="Settings sections" class="soup-tabs__list"><button id="_R_9_-tab-general" role="tab" type="button" aria-selected="true" aria-controls="_R_9_-panel-general" tabindex="0">General</button><button id="_R_9_-tab-team" role="tab" type="button" aria-selected="false" aria-controls="_R_9_-panel-team" tabindex="-1">Team</button></div>
+<div id="_R_9_-panel-general" role="tabpanel" aria-labelledby="_R_9_-tab-general" tabindex="0" class="soup-tabs__panel">
+<article class="soup-card">
+<form>
+<div class="soup-stack soup-gap--lg">
+<div class="soup-field"><label class="soup-field__label" for="settings-name">Workspace name</label><input type="text" class="soup-input" id="settings-name" aria-describedby="settings-name-description" required="" value="Northstar Studio"/><p class="soup-field__description" id="settings-name-description">This name appears across your workspace</p></div>
+<div class="soup-field"><label class="soup-field__label" for="settings-timezone">Timezone</label>
+<div class="soup-dropdown" data-value="Europe/Rome" data-searchable>
+<div class="soup-dropdown__control"><button id="settings-timezone" type="button" class="soup-dropdown__trigger" aria-label="Timezone" aria-haspopup="listbox" aria-expanded="false" aria-controls="settings-timezone-listbox"><span class="soup-dropdown__value">Europe / Rome</span><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></button></div>
+<template data-soup-options>
+<div data-value="Europe/Rome">
+<div><strong>Europe / Rome</strong></div>
+</div>
+<div data-value="America/New_York">
+<div><strong>America / New York</strong></div>
+</div>
+<div data-value="Asia/Tokyo">
+<div><strong>Asia / Tokyo</strong></div>
+</div>
+</template>
+</div>
+</div>
+<div class="soup-grid soup-gap--md">
+<div class="soup-field"><label class="soup-field__label" for="settings-review-date">Next review date</label><input type="date" class="soup-input" id="settings-review-date" required="" value="2026-10-15"/></div>
+<div class="soup-field"><label class="soup-field__label" for="settings-review-time">Reminder time</label><input type="time" class="soup-input" id="settings-review-time" step="900" aria-describedby="settings-review-time-description" required="" value="09:00"/><p class="soup-field__description" id="settings-review-time-description">Local time in Europe/Rome</p></div>
+</div>
+<hr role="separator" aria-orientation="horizontal" class="soup-separator soup-separator--horizontal"/><label class="soup-switch"><input type="checkbox" role="switch" checked=""/><span class="soup-switch__track" aria-hidden="true"></span><span>Email notifications</span></label>
+<div class="soup-inline soup-gap--md soup-align--center soup-justify--end"><button type="submit" class="soup-button soup-button--primary soup-button--md">Save changes</button></div>
+</div>
+</form>
+</article>
+</div>
+<div id="_R_9_-panel-team" role="tabpanel" aria-labelledby="_R_9_-tab-team" hidden="" tabindex="0" class="soup-tabs__panel">
+<div role="status" class="soup-alert soup-tone--info"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></svg>
+<div><strong>Team settings</strong>
+<div>Invite members from your workspace dashboard.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<div class="soup-toast-viewport" aria-label="Notifications"></div>
+</div>
+</div>
+</body>
+</html>

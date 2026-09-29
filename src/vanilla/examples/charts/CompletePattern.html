@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Charts — CompletePattern</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+<script type="module" src="../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<main class="soup-example-page">
+<div class="soup-stack soup-gap--lg">
+<header><h1>Project analytics.</h1><p class="soup-example-lead">Choose the chart that makes each question easy to answer.</p></header>
+<figure class="soup-chart"><figcaption class="soup-chart__header"><strong>Delivery trend</strong><span>Completed tasks by month</span></figcaption>
+<div class="soup-chart__plot"><svg viewBox="0 0 640 320" role="img" aria-label="Delivery trend, line chart"><g aria-hidden="true"><g><line class="soup-chart__grid" x1="60" x2="620" y1="272" y2="272"></line><text class="soup-chart__axis-label" x="50" y="272" text-anchor="end" dominant-baseline="middle">0</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="209" y2="209"></line><text class="soup-chart__axis-label" x="50" y="209" text-anchor="end" dominant-baseline="middle">10</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="146" y2="146"></line><text class="soup-chart__axis-label" x="50" y="146" text-anchor="end" dominant-baseline="middle">20</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="83" y2="83"></line><text class="soup-chart__axis-label" x="50" y="83" text-anchor="end" dominant-baseline="middle">30</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="20" y2="20"></line><text class="soup-chart__axis-label" x="50" y="20" text-anchor="end" dominant-baseline="middle">40</text></g></g><g aria-hidden="true"><text class="soup-chart__axis-label" x="60" y="298" text-anchor="middle">Jan</text><text class="soup-chart__axis-label" x="172" y="298" text-anchor="middle">Feb</text><text class="soup-chart__axis-label" x="284" y="298" text-anchor="middle">Mar</text><text class="soup-chart__axis-label" x="396" y="298" text-anchor="middle">Apr</text><text class="soup-chart__axis-label" x="508" y="298" text-anchor="middle">May</text><text class="soup-chart__axis-label" x="620" y="298" text-anchor="middle">Jun</text></g><g style="color:var(--soup-chart-color-1)"><g><path class="soup-chart__line" d="M 60 183.8 L 172 158.6 L 284 139.7 L 396 152.3 L 508 95.60000000000002 L 620 57.80000000000001"></path></g><circle class="soup-chart__point" cx="60" cy="183.8" r="5" tabindex="0" aria-label="Product, Jan: 14"><title>Product, Jan: 14</title></circle><circle class="soup-chart__point" cx="172" cy="158.6" r="5" tabindex="0" aria-label="Product, Feb: 18"><title>Product, Feb: 18</title></circle><circle class="soup-chart__point" cx="284" cy="139.7" r="5" tabindex="0" aria-label="Product, Mar: 21"><title>Product, Mar: 21</title></circle><circle class="soup-chart__point" cx="396" cy="152.3" r="5" tabindex="0" aria-label="Product, Apr: 19"><title>Product, Apr: 19</title></circle><circle class="soup-chart__point" cx="508" cy="95.60000000000002" r="5" tabindex="0" aria-label="Product, May: 28"><title>Product, May: 28</title></circle><circle class="soup-chart__point" cx="620" cy="57.80000000000001" r="5" tabindex="0" aria-label="Product, Jun: 34"><title>Product, Jun: 34</title></circle></g><g style="color:var(--soup-chart-color-2)"><g><path class="soup-chart__line" d="M 60 209 L 172 190.1 L 284 164.9 L 396 127.10000000000002 L 508 114.5 L 620 76.69999999999999"></path></g><circle class="soup-chart__point" cx="60" cy="209" r="5" tabindex="0" aria-label="Platform, Jan: 10"><title>Platform, Jan: 10</title></circle><circle class="soup-chart__point" cx="172" cy="190.1" r="5" tabindex="0" aria-label="Platform, Feb: 13"><title>Platform, Feb: 13</title></circle><circle class="soup-chart__point" cx="284" cy="164.9" r="5" tabindex="0" aria-label="Platform, Mar: 17"><title>Platform, Mar: 17</title></circle><circle class="soup-chart__point" cx="396" cy="127.10000000000002" r="5" tabindex="0" aria-label="Platform, Apr: 23"><title>Platform, Apr: 23</title></circle><circle class="soup-chart__point" cx="508" cy="114.5" r="5" tabindex="0" aria-label="Platform, May: 25"><title>Platform, May: 25</title></circle><circle class="soup-chart__point" cx="620" cy="76.69999999999999" r="5" tabindex="0" aria-label="Platform, Jun: 31"><title>Platform, Jun: 31</title></circle></g></svg></div>
+<ul class="soup-chart__legend" aria-label="Legend">
+<li style="color:var(--soup-chart-color-1)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Product</span></li>
+<li style="color:var(--soup-chart-color-2)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Platform</span></li>
+</ul>
+<table class="soup-chart__data"><caption>Delivery trend data</caption>
+<thead>
+<tr><th scope="col">Period</th><th scope="col">Product</th><th scope="col">Platform</th></tr>
+</thead>
+<tbody>
+<tr><td>Jan</td><td>14</td><td>10</td></tr>
+<tr><td>Feb</td><td>18</td><td>13</td></tr>
+<tr><td>Mar</td><td>21</td><td>17</td></tr>
+<tr><td>Apr</td><td>19</td><td>23</td></tr>
+<tr><td>May</td><td>28</td><td>25</td></tr>
+<tr><td>Jun</td><td>34</td><td>31</td></tr>
+</tbody>
+</table>
+</figure><figure class="soup-chart"><figcaption class="soup-chart__header"><strong>Work by team</strong><span>Tasks completed this quarter</span></figcaption>
+<div class="soup-chart__plot"><svg viewBox="0 0 640 320" role="img" aria-label="Work by team, horizontal bar chart"><g aria-hidden="true"><g><line class="soup-chart__grid" x1="108" x2="108" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="108" y="294" text-anchor="middle">0</text></g><g><line class="soup-chart__grid" x1="278.66666666666663" x2="278.66666666666663" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="278.66666666666663" y="294" text-anchor="middle">20</text></g><g><line class="soup-chart__grid" x1="449.3333333333333" x2="449.3333333333333" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="449.3333333333333" y="294" text-anchor="middle">40</text></g><g><line class="soup-chart__grid" x1="620" x2="620" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="620" y="294" text-anchor="middle">60</text></g></g><g aria-hidden="true"><text class="soup-chart__axis-label" x="98" y="51.5" text-anchor="end" dominant-baseline="middle">Design</text><text class="soup-chart__axis-label" x="98" y="114.5" text-anchor="end" dominant-baseline="middle">Engineering</text><text class="soup-chart__axis-label" x="98" y="177.5" text-anchor="end" dominant-baseline="middle">Research</text><text class="soup-chart__axis-label" x="98" y="240.5" text-anchor="end" dominant-baseline="middle">Operations</text></g><g style="color:var(--soup-chart-color-1)"><rect class="soup-chart__bar" x="108" y="31.5416" width="273.06666666666666" height="39.9168" tabindex="0" aria-label="Tasks, Design: 32"><title>Tasks, Design: 32</title></rect><rect class="soup-chart__bar" x="108" y="94.54159999999999" width="409.6" height="39.9168" tabindex="0" aria-label="Tasks, Engineering: 48"><title>Tasks, Engineering: 48</title></rect><rect class="soup-chart__bar" x="108" y="157.5416" width="162.13333333333333" height="39.9168" tabindex="0" aria-label="Tasks, Research: 19"><title>Tasks, Research: 19</title></rect><rect class="soup-chart__bar" x="108" y="220.5416" width="213.33333333333337" height="39.9168" tabindex="0" aria-label="Tasks, Operations: 25"><title>Tasks, Operations: 25</title></rect></g></svg></div>
+<table class="soup-chart__data"><caption>Work by team data</caption>
+<thead>
+<tr><th scope="col">Category</th><th scope="col">Tasks</th></tr>
+</thead>
+<tbody>
+<tr><td>Design</td><td>32</td></tr>
+<tr><td>Engineering</td><td>48</td></tr>
+<tr><td>Research</td><td>19</td></tr>
+<tr><td>Operations</td><td>25</td></tr>
+</tbody>
+</table>
+</figure><figure class="soup-chart soup-chart--pie"><figcaption class="soup-chart__header"><strong>Project allocation</strong><span>Share of active projects</span></figcaption>
+<div class="soup-chart__plot"><svg class="soup-chart__pie" viewBox="0 0 320 320" role="img" aria-label="Project allocation, donut chart"><path class="soup-chart__slice" d="M 160 36 A 124 124 0 0 1 219.73745558861273 268.66202832543905 L 196.6132792317304 226.59930768333362 A 76 76 0 0 0 160 84 Z" style="color:var(--soup-chart-color-1)" tabindex="0" aria-label="Product: 42% (42%)"><title>Product: 42% (42%)</title></path><path class="soup-chart__slice" d="M 219.73745558861273 268.66202832543905 A 124 124 0 0 1 38.19638090964261 183.2352830086299 L 85.34616894461966 174.2409799085151 A 76 76 0 0 0 196.6132792317304 226.59930768333362 Z" style="color:var(--soup-chart-color-2)" tabindex="0" aria-label="Platform: 30% (30%)"><title>Platform: 30% (30%)</title></path><path class="soup-chart__slice" d="M 38.19638090964261 183.2352830086299 A 124 124 0 0 1 87.11462871573332 59.68189269750653 L 115.32832082577204 98.514708427504 A 76 76 0 0 0 85.34616894461966 174.2409799085151 Z" style="color:var(--soup-chart-color-3)" tabindex="0" aria-label="Research: 18% (18%)"><title>Research: 18% (18%)</title></path><path class="soup-chart__slice" d="M 87.11462871573332 59.68189269750653 A 124 124 0 0 1 159.99999999999997 36 L 160 84 A 76 76 0 0 0 115.32832082577204 98.514708427504 Z" style="color:var(--soup-chart-color-4)" tabindex="0" aria-label="Operations: 10% (10%)"><title>Operations: 10% (10%)</title></path><g class="soup-chart__center" aria-hidden="true"><text x="160" y="153" text-anchor="middle">Projects</text><text class="soup-chart__center-value" x="160" y="182" text-anchor="middle">100%</text></g></svg></div>
+<ul class="soup-chart__legend" aria-label="Legend">
+<li style="color:var(--soup-chart-color-1)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Product</span></li>
+<li style="color:var(--soup-chart-color-2)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Platform</span></li>
+<li style="color:var(--soup-chart-color-3)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Research</span></li>
+<li style="color:var(--soup-chart-color-4)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Operations</span></li>
+</ul>
+<table class="soup-chart__data"><caption>Project allocation data</caption>
+<thead>
+<tr><th scope="col">Category</th><th scope="col">Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Product</td><td>42</td></tr>
+<tr><td>Platform</td><td>30</td></tr>
+<tr><td>Research</td><td>18</td></tr>
+<tr><td>Operations</td><td>10</td></tr>
+</tbody>
+</table>
+</figure><figure class="soup-chart"><figcaption class="soup-chart__header"><strong>Project outcomes</strong><span>Compare delivery time with completion</span></figcaption>
+<div class="soup-chart__plot"><svg viewBox="0 0 640 320" role="img" aria-label="Project outcomes, scatter plot"><g aria-hidden="true"><g><line class="soup-chart__grid" x1="60" x2="620" y1="272" y2="272"></line><text class="soup-chart__axis-label" x="50" y="272" text-anchor="end" dominant-baseline="middle">60</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="209" y2="209"></line><text class="soup-chart__axis-label" x="50" y="209" text-anchor="end" dominant-baseline="middle">70</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="146" y2="146"></line><text class="soup-chart__axis-label" x="50" y="146" text-anchor="end" dominant-baseline="middle">80</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="83" y2="83"></line><text class="soup-chart__axis-label" x="50" y="83" text-anchor="end" dominant-baseline="middle">90</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="20" y2="20"></line><text class="soup-chart__axis-label" x="50" y="20" text-anchor="end" dominant-baseline="middle">100</text></g></g><g aria-hidden="true"><g><line class="soup-chart__grid" x1="60" x2="60" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="60" y="294" text-anchor="middle">2</text></g><g><line class="soup-chart__grid" x1="200" x2="200" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="200" y="294" text-anchor="middle">4</text></g><g><line class="soup-chart__grid" x1="340" x2="340" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="340" y="294" text-anchor="middle">6</text></g><g><line class="soup-chart__grid" x1="480" x2="480" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="480" y="294" text-anchor="middle">8</text></g><g><line class="soup-chart__grid" x1="620" x2="620" y1="20" y2="272"></line><text class="soup-chart__axis-label" x="620" y="294" text-anchor="middle">10</text></g></g><g aria-hidden="true"><text class="soup-chart__axis-title" x="320" y="316" text-anchor="middle">Weeks</text><text class="soup-chart__axis-title" x="14" y="160" text-anchor="middle" transform="rotate(-90 14 160)">Completion %</text></g><g style="color:var(--soup-chart-color-1)"><circle class="soup-chart__point soup-chart__point--scatter" cx="130" cy="158.6" r="6" tabindex="0" aria-label="Product, Atlas: Weeks 3, Completion % 78%"><title>Product, Atlas: Weeks 3, Completion % 78%</title></circle><circle class="soup-chart__point soup-chart__point--scatter" cx="270" cy="76.69999999999999" r="6" tabindex="0" aria-label="Product, Orion: Weeks 5, Completion % 91%"><title>Product, Orion: Weeks 5, Completion % 91%</title></circle><circle class="soup-chart__point soup-chart__point--scatter" cx="480" cy="57.80000000000001" r="6" tabindex="0" aria-label="Product, Nova: Weeks 8, Completion % 94%"><title>Product, Nova: Weeks 8, Completion % 94%</title></circle></g><g style="color:var(--soup-chart-color-2)"><circle class="soup-chart__point soup-chart__point--scatter" cx="200" cy="209" r="6" tabindex="0" aria-label="Platform, Core: Weeks 4, Completion % 70%"><title>Platform, Core: Weeks 4, Completion % 70%</title></circle><circle class="soup-chart__point soup-chart__point--scatter" cx="340" cy="114.5" r="6" tabindex="0" aria-label="Platform, API: Weeks 6, Completion % 85%"><title>Platform, API: Weeks 6, Completion % 85%</title></circle><circle class="soup-chart__point soup-chart__point--scatter" cx="550" cy="95.60000000000002" r="6" tabindex="0" aria-label="Platform, Tools: Weeks 9, Completion % 88%"><title>Platform, Tools: Weeks 9, Completion % 88%</title></circle></g></svg></div>
+<ul class="soup-chart__legend" aria-label="Legend">
+<li style="color:var(--soup-chart-color-1)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Product</span></li>
+<li style="color:var(--soup-chart-color-2)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Platform</span></li>
+</ul>
+<table class="soup-chart__data"><caption>Project outcomes data</caption>
+<thead>
+<tr><th scope="col">Series</th><th scope="col">Point</th><th scope="col">Weeks</th><th scope="col">Completion %</th></tr>
+</thead>
+<tbody>
+<tr><td>Product</td><td>Atlas</td><td>3</td><td>78</td></tr>
+<tr><td>Product</td><td>Orion</td><td>5</td><td>91</td></tr>
+<tr><td>Product</td><td>Nova</td><td>8</td><td>94</td></tr>
+<tr><td>Platform</td><td>Core</td><td>4</td><td>70</td></tr>
+<tr><td>Platform</td><td>API</td><td>6</td><td>85</td></tr>
+<tr><td>Platform</td><td>Tools</td><td>9</td><td>88</td></tr>
+</tbody>
+</table>
+</figure></div>
+</main>
+</div>
+</div>
+</div>
+</body>
+</html>

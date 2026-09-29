@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples/Project Workspace — NoProjectsYet</title>
+<link rel="stylesheet" href="../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../shared/styles/examples.css">
+<script type="module" src="../../behavior.ts"></script>
+<script type="module" src="./example.ts"></script>
+</head>
+<body>
+<div class="soup-story-surface">
+<div>
+<div class="soup-container">
+<main class="soup-example-page">
+<div class="soup-stack soup-gap--lg">
+<div class="soup-inline soup-gap--md soup-align--end soup-justify--between">
+<header><h1>Project workspace</h1><p class="soup-example-lead">Find, review, and manage the work across your team.</p></header>
+<button type="button" class="soup-button soup-button--primary soup-button--md" data-soup-dialog-open="soup-dialog-0">New project</button></div>
+<article class="soup-card">
+<div class="soup-stack soup-gap--md">
+<div role="status" class="soup-alert soup-tone--info"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></svg>
+<div><strong>No projects yet</strong>
+<div>Create a project to start organizing your team’s work.</div>
+</div>
+</div>
+</div>
+</article>
+<dialog id="soup-dialog-0" class="soup-dialog" aria-label="New project" aria-describedby="_R_d_">
+<div class="soup-dialog__header">
+<div><h2>New project</h2><p id="_R_d_">Keep the project details clear for everyone on the team.</p></div>
+<button type="button" aria-label="Close dialog" class="soup-icon-button soup-button--ghost soup-button--md"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19"></path></svg></button></div>
+<div class="soup-dialog__body">
+<form id="project-workspace-form">
+<div class="soup-stack soup-gap--md">
+<div class="soup-field"><label class="soup-field__label" for="workspace-name">Project name</label><input type="text" class="soup-input" id="workspace-name" aria-invalid="false" required="" value=""/></div>
+<div class="soup-field"><label class="soup-field__label" for="workspace-owner">Owner</label><span class="soup-select-wrap"><select class="soup-input soup-select" id="workspace-owner"><option selected="">Ada Lovelace</option><option>Grace Hopper</option><option>Lin Chen</option></select><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></span></div>
+<div class="soup-field"><label class="soup-field__label" for="workspace-type">Type</label><span class="soup-select-wrap"><select class="soup-input soup-select" id="workspace-type"><option selected="">Design</option><option>Engineering</option><option>Research</option></select><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></span></div>
+<div class="soup-field"><label class="soup-field__label" for="workspace-draft-status">Status</label><span class="soup-select-wrap"><select class="soup-input soup-select" id="workspace-draft-status"><option selected="">Draft</option><option>Active</option></select><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></span></div>
+</div>
+</form>
+</div>
+<div class="soup-dialog__footer"><button type="button" class="soup-button soup-button--secondary soup-button--md">Cancel</button><button type="submit" class="soup-button soup-button--primary soup-button--md" form="project-workspace-form">Create project</button></div>
+</dialog>
+<dialog id="soup-dialog-1" class="soup-dialog" aria-label="Delete project?" aria-describedby="_R_h_">
+<div class="soup-dialog__header">
+<div><h2>Delete project?</h2><p id="_R_h_">This action cannot be undone.</p></div>
+<button type="button" aria-label="Close dialog" class="soup-icon-button soup-button--ghost soup-button--md"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19"></path></svg></button></div>
+<div class="soup-dialog__body"><p>Delete <strong></strong> from the workspace?</p></div>
+<div class="soup-dialog__footer"><button type="button" class="soup-button soup-button--secondary soup-button--md">Cancel</button><button type="button" class="soup-button soup-button--danger soup-button--md">Delete project</button></div>
+</dialog>
+</div>
+</main>
+</div>
+<div class="soup-toast-viewport" aria-label="Notifications"></div>
+<template data-soup-workspace-card>
+<article class="soup-card">
+<div class="soup-stack soup-gap--md">
+<div class="soup-inline soup-gap--md soup-align--center soup-justify--between">
+<div class="soup-example-toolbar-search">
+<div class="soup-field"><label class="soup-field__label" for="workspace-query">Search projects</label><input type="search" class="soup-input" id="workspace-query" value=""/></div>
+</div>
+<div class="soup-field"><label class="soup-field__label" for="workspace-status">Status</label><span class="soup-select-wrap"><select class="soup-input soup-select" id="workspace-status"><option value="all" selected="">All statuses</option><option value="Active">Active</option><option value="Draft">Draft</option></select><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 9 7 7 7-7"></path></svg></span></div>
+</div>
+<div class="soup-inline soup-gap--md soup-align--center soup-justify--between"><strong role="status">8 projects</strong></div>
+<div class="soup-table-data">
+<div class="soup-table-scroll" role="region" aria-label="Scrollable table" tabindex="0">
+<table class="soup-table" aria-label="Projects">
+<thead>
+<tr><th scope="col"><button type="button" class="soup-table__sort">Project<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th><th scope="col"><button type="button" class="soup-table__sort">Owner<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th><th scope="col"><button type="button" class="soup-table__sort">Type<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th><th scope="col"><button type="button" class="soup-table__sort">Status<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th><th scope="col">Actions</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Atlas</strong></td><td>Ada Lovelace</td><td>Design</td><td><span class="soup-badge soup-tone--success">Active</span></td><td>
+<div class="soup-menu" data-align="end"><button type="button" class="soup-menu__trigger" aria-label="Actions for Atlas" aria-haspopup="menu" aria-expanded="false" aria-controls="_R_2j79_"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle></svg></button>
+<template data-soup-menu><button type="button" role="menuitem" data-action="Edit project" class="soup-menu__item"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20h4l11-11-4-4L4 16v4Z"></path><path d="m13 7 4 4"></path></svg>Edit project</button><button type="button" role="menuitem" data-action="Delete project" class="soup-menu__item soup-menu__item--danger"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 10v7M14 10v7"></path></svg>Delete project</button></template>
+</div>
+</td></tr>
+<tr><td><strong>Orion</strong></td><td>Grace Hopper</td><td>Engineering</td><td><span class="soup-badge soup-tone--success">Active</span></td><td>
+<div class="soup-menu" data-align="end"><button type="button" class="soup-menu__trigger" aria-label="Actions for Orion" aria-haspopup="menu" aria-expanded="false" aria-controls="_R_2l79_"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle></svg></button>
+<template data-soup-menu><button type="button" role="menuitem" data-action="Edit project" class="soup-menu__item"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20h4l11-11-4-4L4 16v4Z"></path><path d="m13 7 4 4"></path></svg>Edit project</button><button type="button" role="menuitem" data-action="Delete project" class="soup-menu__item soup-menu__item--danger"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 10v7M14 10v7"></path></svg>Delete project</button></template>
+</div>
+</td></tr>
+<tr><td><strong>Meridian</strong></td><td>Lin Chen</td><td>Research</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td><td>
+<div class="soup-menu" data-align="end"><button type="button" class="soup-menu__trigger" aria-label="Actions for Meridian" aria-haspopup="menu" aria-expanded="false" aria-controls="_R_2n79_"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle></svg></button>
+<template data-soup-menu><button type="button" role="menuitem" data-action="Edit project" class="soup-menu__item"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20h4l11-11-4-4L4 16v4Z"></path><path d="m13 7 4 4"></path></svg>Edit project</button><button type="button" role="menuitem" data-action="Delete project" class="soup-menu__item soup-menu__item--danger"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 10v7M14 10v7"></path></svg>Delete project</button></template>
+</div>
+</td></tr>
+<tr><td><strong>Vector</strong></td><td>Ada Lovelace</td><td>Design</td><td><span class="soup-badge soup-tone--neutral">Draft</span></td><td>
+<div class="soup-menu" data-align="end"><button type="button" class="soup-menu__trigger" aria-label="Actions for Vector" aria-haspopup="menu" aria-expanded="false" aria-controls="_R_2p79_"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="12" r="1"></circle><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle></svg></button>
+<template data-soup-menu><button type="button" role="menuitem" data-action="Edit project" class="soup-menu__item"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20h4l11-11-4-4L4 16v4Z"></path><path d="m13 7 4 4"></path></svg>Edit project</button><button type="button" role="menuitem" data-action="Delete project" class="soup-menu__item soup-menu__item--danger"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 10v7M14 10v7"></path></svg>Delete project</button></template>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="soup-table__pagination">
+<nav class="soup-pagination" aria-label="Pagination"><span class="soup-pagination__summary">Page 1 of 2</span>
+<div class="soup-pagination__controls"><button type="button" class="soup-pagination__button" aria-label="First page" disabled=""><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5v14m13-14-7 7 7 7"></path></svg></button><button type="button" class="soup-pagination__button" aria-label="Previous page" disabled=""><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 5-7 7 7 7M5 12h14"></path></svg></button><button type="button" class="soup-pagination__button soup-pagination__page" aria-label="Page 1" aria-current="page" data-boundary="true">1</button><button type="button" class="soup-pagination__button soup-pagination__page" aria-label="Page 2" data-boundary="true">2</button><button type="button" class="soup-pagination__button" aria-label="Next page"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 5 7 7-7 7M19 12H5"></path></svg></button><button type="button" class="soup-pagination__button" aria-label="Last page"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 5v14M6 5l7 7-7 7"></path></svg></button></div>
+</nav>
+</div>
+</div>
+</div>
+</article>
+</template>
+</div>
+</div>
+</body>
+</html>

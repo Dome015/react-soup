@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components/LineChart — Line</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div class="soup-story-content">
+<figure class="soup-chart"><figcaption class="soup-chart__header"><strong>Work completed</strong><span>Tasks completed each month</span></figcaption>
+<div class="soup-chart__plot"><svg viewBox="0 0 640 320" role="img" aria-label="Work completed, line chart"><g aria-hidden="true"><g><line class="soup-chart__grid" x1="60" x2="620" y1="272" y2="272"></line><text class="soup-chart__axis-label" x="50" y="272" text-anchor="end" dominant-baseline="middle">0</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="209" y2="209"></line><text class="soup-chart__axis-label" x="50" y="209" text-anchor="end" dominant-baseline="middle">10</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="146" y2="146"></line><text class="soup-chart__axis-label" x="50" y="146" text-anchor="end" dominant-baseline="middle">20</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="83" y2="83"></line><text class="soup-chart__axis-label" x="50" y="83" text-anchor="end" dominant-baseline="middle">30</text></g><g><line class="soup-chart__grid" x1="60" x2="620" y1="20" y2="20"></line><text class="soup-chart__axis-label" x="50" y="20" text-anchor="end" dominant-baseline="middle">40</text></g></g><g aria-hidden="true"><text class="soup-chart__axis-label" x="60" y="298" text-anchor="middle">Jan</text><text class="soup-chart__axis-label" x="172" y="298" text-anchor="middle">Feb</text><text class="soup-chart__axis-label" x="284" y="298" text-anchor="middle">Mar</text><text class="soup-chart__axis-label" x="396" y="298" text-anchor="middle">Apr</text><text class="soup-chart__axis-label" x="508" y="298" text-anchor="middle">May</text><text class="soup-chart__axis-label" x="620" y="298" text-anchor="middle">Jun</text></g><g style="color:var(--soup-chart-color-1)"><g><path class="soup-chart__line" d="M 60 196.4 L 172 158.6 L 284 171.2 L 396 114.5 L 508 95.60000000000002 L 620 57.80000000000001"></path></g><circle class="soup-chart__point" cx="60" cy="196.4" r="5" tabindex="0" aria-label="Design, Jan: 12"><title>Design, Jan: 12</title></circle><circle class="soup-chart__point" cx="172" cy="158.6" r="5" tabindex="0" aria-label="Design, Feb: 18"><title>Design, Feb: 18</title></circle><circle class="soup-chart__point" cx="284" cy="171.2" r="5" tabindex="0" aria-label="Design, Mar: 16"><title>Design, Mar: 16</title></circle><circle class="soup-chart__point" cx="396" cy="114.5" r="5" tabindex="0" aria-label="Design, Apr: 25"><title>Design, Apr: 25</title></circle><circle class="soup-chart__point" cx="508" cy="95.60000000000002" r="5" tabindex="0" aria-label="Design, May: 28"><title>Design, May: 28</title></circle><circle class="soup-chart__point" cx="620" cy="57.80000000000001" r="5" tabindex="0" aria-label="Design, Jun: 34"><title>Design, Jun: 34</title></circle></g><g style="color:var(--soup-chart-color-2)"><g><path class="soup-chart__line" d="M 60 215.3 L 172 183.8 L 284 146 L 396 133.39999999999998 L 508 76.69999999999999 L 620 32.60000000000002"></path></g><circle class="soup-chart__point" cx="60" cy="215.3" r="5" tabindex="0" aria-label="Engineering, Jan: 9"><title>Engineering, Jan: 9</title></circle><circle class="soup-chart__point" cx="172" cy="183.8" r="5" tabindex="0" aria-label="Engineering, Feb: 14"><title>Engineering, Feb: 14</title></circle><circle class="soup-chart__point" cx="284" cy="146" r="5" tabindex="0" aria-label="Engineering, Mar: 20"><title>Engineering, Mar: 20</title></circle><circle class="soup-chart__point" cx="396" cy="133.39999999999998" r="5" tabindex="0" aria-label="Engineering, Apr: 22"><title>Engineering, Apr: 22</title></circle><circle class="soup-chart__point" cx="508" cy="76.69999999999999" r="5" tabindex="0" aria-label="Engineering, May: 31"><title>Engineering, May: 31</title></circle><circle class="soup-chart__point" cx="620" cy="32.60000000000002" r="5" tabindex="0" aria-label="Engineering, Jun: 38"><title>Engineering, Jun: 38</title></circle></g></svg></div>
+<ul class="soup-chart__legend" aria-label="Legend">
+<li style="color:var(--soup-chart-color-1)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Design</span></li>
+<li style="color:var(--soup-chart-color-2)"><span class="soup-chart__swatch" aria-hidden="true"></span><span>Engineering</span></li>
+</ul>
+<table class="soup-chart__data"><caption>Work completed data</caption>
+<thead>
+<tr><th scope="col">Period</th><th scope="col">Design</th><th scope="col">Engineering</th></tr>
+</thead>
+<tbody>
+<tr><td>Jan</td><td>12</td><td>9</td></tr>
+<tr><td>Feb</td><td>18</td><td>14</td></tr>
+<tr><td>Mar</td><td>16</td><td>20</td></tr>
+<tr><td>Apr</td><td>25</td><td>22</td></tr>
+<tr><td>May</td><td>28</td><td>31</td></tr>
+<tr><td>Jun</td><td>34</td><td>38</td></tr>
+</tbody>
+</table>
+</figure>
+</div>
+</div>
+</body>
+</html>

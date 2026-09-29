@@ -1,0 +1,5 @@
+.soup-gallery { max-width: var(--soup-full); padding-block: var(--soup-space-6); }
+.soup-gallery__select { width: auto; }
+.soup-gallery__comparison { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--soup-chart-cartesian-min-width)), 1fr)); gap: var(--soup-space-4); margin-top: var(--soup-space-6); }
+.soup-gallery__comparison section { min-width: var(--soup-space-0); }
+.soup-gallery__comparison iframe { display: block; width: var(--soup-full); height: var(--soup-viewport-height); background: var(--soup-color-surface); border: var(--soup-border-width) solid var(--soup-color-border); }

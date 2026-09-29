@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Components/Table — ServerControlled</title>
+<link rel="stylesheet" href="../../../../shared/styles/index.css">
+<link rel="stylesheet" href="../../../../shared/styles/examples.css">
+<script type="module" src="../../../behavior.ts"></script>
+
+</head>
+<body>
+<div class="soup-story-surface">
+<div class="soup-story-content">
+<div class="soup-table-data" data-page-size="5">
+<div class="soup-table-scroll" role="region" aria-label="Scrollable table" tabindex="0">
+<table class="soup-table" aria-label="Server controlled projects">
+<thead>
+<tr><th scope="col"><button type="button" class="soup-table__sort">Name<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th><th scope="col"><button type="button" class="soup-table__sort">Score<svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"></path></svg></button></th></tr>
+</thead>
+<tbody>
+<tr><td>Project 01</td><td>0</td></tr>
+<tr><td>Project 02</td><td>17</td></tr>
+<tr><td>Project 03</td><td>34</td></tr>
+<tr><td>Project 04</td><td>51</td></tr>
+<tr><td>Project 05</td><td>68</td></tr>
+</tbody>
+</table>
+</div>
+<div class="soup-table__pagination">
+<nav class="soup-pagination" aria-label="Pagination"><span class="soup-pagination__summary">Page 1 of 9</span>
+<div class="soup-pagination__controls"><button type="button" class="soup-pagination__button" aria-label="First page" disabled=""><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 5v14m13-14-7 7 7 7"></path></svg></button><button type="button" class="soup-pagination__button" aria-label="Previous page" disabled=""><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 5-7 7 7 7M5 12h14"></path></svg></button><button type="button" class="soup-pagination__button soup-pagination__page" aria-label="Page 1" aria-current="page" data-boundary="true">1</button><button type="button" class="soup-pagination__button soup-pagination__page" aria-label="Page 2">2</button><span class="soup-pagination__ellipsis" aria-hidden="true">…</span><button type="button" class="soup-pagination__button soup-pagination__page" aria-label="Page 9" data-boundary="true">9</button><button type="button" class="soup-pagination__button" aria-label="Next page"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 5 7 7-7 7M19 12H5"></path></svg></button><button type="button" class="soup-pagination__button" aria-label="Last page"><svg class="soup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 5v14M6 5l7 7-7 7"></path></svg></button></div>
+</nav>
+</div>
+<template data-soup-rows>
+<tr><td>Project 01</td><td>0</td></tr>
+<tr><td>Project 02</td><td>17</td></tr>
+<tr><td>Project 03</td><td>34</td></tr>
+<tr><td>Project 04</td><td>51</td></tr>
+<tr><td>Project 05</td><td>68</td></tr>
+<tr><td>Project 06</td><td>85</td></tr>
+<tr><td>Project 07</td><td>2</td></tr>
+<tr><td>Project 08</td><td>19</td></tr>
+<tr><td>Project 09</td><td>36</td></tr>
+<tr><td>Project 10</td><td>53</td></tr>
+<tr><td>Project 11</td><td>70</td></tr>
+<tr><td>Project 12</td><td>87</td></tr>
+<tr><td>Project 13</td><td>4</td></tr>
+<tr><td>Project 14</td><td>21</td></tr>
+<tr><td>Project 15</td><td>38</td></tr>
+<tr><td>Project 16</td><td>55</td></tr>
+<tr><td>Project 17</td><td>72</td></tr>
+<tr><td>Project 18</td><td>89</td></tr>
+<tr><td>Project 19</td><td>6</td></tr>
+<tr><td>Project 20</td><td>23</td></tr>
+<tr><td>Project 21</td><td>40</td></tr>
+<tr><td>Project 22</td><td>57</td></tr>
+<tr><td>Project 23</td><td>74</td></tr>
+<tr><td>Project 24</td><td>91</td></tr>
+<tr><td>Project 25</td><td>8</td></tr>
+<tr><td>Project 26</td><td>25</td></tr>
+<tr><td>Project 27</td><td>42</td></tr>
+<tr><td>Project 28</td><td>59</td></tr>
+<tr><td>Project 29</td><td>76</td></tr>
+<tr><td>Project 30</td><td>93</td></tr>
+<tr><td>Project 31</td><td>10</td></tr>
+<tr><td>Project 32</td><td>27</td></tr>
+<tr><td>Project 33</td><td>44</td></tr>
+<tr><td>Project 34</td><td>61</td></tr>
+<tr><td>Project 35</td><td>78</td></tr>
+<tr><td>Project 36</td><td>95</td></tr>
+<tr><td>Project 37</td><td>12</td></tr>
+<tr><td>Project 38</td><td>29</td></tr>
+<tr><td>Project 39</td><td>46</td></tr>
+<tr><td>Project 40</td><td>63</td></tr>
+<tr><td>Project 41</td><td>80</td></tr>
+<tr><td>Project 42</td><td>97</td></tr>
+</template>
+</div>
+</div>
+</div>
+</body>
+</html>
