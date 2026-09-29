@@ -15,6 +15,6 @@ Use this for commands; use Dropdown or `<select>` for field values. The menu ite
 </div>
 ```
 
-Load `../../behavior.ts` once when using menus. Listen for bubbling `soup:select` on the root; `event.detail.action` is the selected `data-action` value (or item text). Handle the command in the page's own script. Use real disabled buttons for unavailable commands. The enhancer uses Arrow keys, Home/End, Escape, outside click, focus return, and viewport-aware positioning. `data-align="end"` aligns the panel's right edge with the trigger; otherwise it starts at the trigger's left edge. Include icon SVG from `src/shared/icons.ts` when an item needs one.
+Load `../../dist/behavior.js` once when using menus. Listen for bubbling `soup:select` on the root; `event.detail.action` is the selected `data-action` value (or item text). Handle the command in the page's own script. Use real disabled buttons for unavailable commands. The enhancer uses Arrow keys, Home/End, Escape, outside click, focus return, and viewport-aware positioning. `data-align="end"` aligns the panel's right edge with the trigger; otherwise it starts at the trigger's left edge. Include icon SVG from `src/shared/icons.ts` when an item needs one.
 
 Inspect `../../stories/Components/DropdownMenu/` and the menu examples in `../../examples/crud-list/` and `../../examples/project-workspace/`. Compare the opened panel, keyboard focus, danger color, and border overlap with the React counterpart in auto, light, and dark themes. Every aesthetic value comes from `src/shared/styles` tokens.

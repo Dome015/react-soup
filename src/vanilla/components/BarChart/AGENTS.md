@@ -1,6 +1,6 @@
 # BarChart in plain HTML
 
-For fixed data, copy the semantic `<figure class="soup-chart">` from the matching HTML story. It contains a figcaption, accessible SVG bars, optional legend, and a data table. No script is needed to display a fixed chart; load the optional `src/vanilla/behavior.ts` only if focus/hover tooltips are needed.
+For fixed data, copy the semantic `<figure class="soup-chart">` from the matching HTML story. It contains a figcaption, accessible SVG bars, optional legend, and a data table. No script is needed to display a fixed chart; load the optional `src/vanilla/dist/behavior.js` only if focus/hover tooltips are needed.
 
 For changing data, keep an existing `<figure class="soup-chart" id="work-chart"></figure>` in the HTML and import `renderBarChart` from `src/vanilla/components/BarChart/BarChart.ts`:
 

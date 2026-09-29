@@ -184,8 +184,9 @@ try {
     await mkdir(destination, { recursive: true });
     const css = relative(destination, join(root, 'src/shared/styles/index.css'));
     const examplesCss = relative(destination, join(root, 'src/shared/styles/examples.css'));
-    const behavior = relative(destination, join(root, 'src/vanilla/behavior.ts'));
-    const exampleScript = group === 'Examples' && existsSync(join(destination, 'example.ts')) ? '<script type="module" src="./example.ts"></script>' : '';
+    const behavior = relative(destination, join(root, 'src/vanilla/dist/behavior.js'));
+    const exampleBundle = relative(destination, join(root, 'src/vanilla/dist/examples', sourceFile.replace(/^Example-/, '').replace(/\.stories\.tsx$/, ''), 'example.js'));
+    const exampleScript = group === 'Examples' && existsSync(join(destination, 'example.ts')) ? `<script type="module" src="${exampleBundle}"></script>` : '';
     const workspaceTemplate = title === 'Examples/Project Workspace' && typeof story.FullDirectory === 'function'
       ? decorate(renderToStaticMarkup(createElement(story.FullDirectory as () => ReturnType<typeof createElement>)), `${title}/FullDirectory`).match(/<article class="soup-card">[\s\S]*?<\/article>/)?.[0]
       : undefined;

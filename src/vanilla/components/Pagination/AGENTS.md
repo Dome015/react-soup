@@ -15,6 +15,6 @@ Pagination is an ordinary `<nav>` with native buttons. Start from the complete m
 </nav>
 ```
 
-Load `../../behavior.ts` once when page numbers should change. The root emits bubbling `soup:pagechange` with `detail.page`; the application must update its list or table for that page. Dispatch `new CustomEvent('soup:setpage', {detail: {page: 1}})` on the nav to change the current page from application code. The enhancer updates summary, visible page window, `aria-current`, and disabled boundaries. `data-sibling-count` optionally changes the number of adjacent page buttons. Omit the entire nav for zero or one page. Numbering starts at one.
+Load `../../dist/behavior.js` once when page numbers should change. The root emits bubbling `soup:pagechange` with `detail.page`; the application must update its list or table for that page. Dispatch `new CustomEvent('soup:setpage', {detail: {page: 1}})` on the nav to change the current page from application code. The enhancer updates summary, visible page window, `aria-current`, and disabled boundaries. `data-sibling-count` optionally changes the number of adjacent page buttons. Omit the entire nav for zero or one page. Numbering starts at one.
 
 Inspect both pagination stories and `../../examples/pagination/`; compare first, middle, and last pages against `src/react/stories/Pagination.stories.tsx` in all theme modes. Shared CSS tokens control size, spacing, colors, and focus.

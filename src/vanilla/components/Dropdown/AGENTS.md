@@ -22,7 +22,7 @@ Use native `<select class="soup-input soup-select">` for a short single choice. 
 </div>
 ```
 
-Load `../../behavior.ts` once through the host's TypeScript build. The script reads the native `<template>`, manages focus, filtering, selected values, hidden form inputs, and `aria-expanded`. `data-multiple`, `data-searchable`, and `data-clearable` are Boolean attributes. `data-value` is the initial selected value or a comma-separated list for multiple selection. `data-name` creates hidden input(s) for native form submission. Each option value must be unique and must not contain a comma in multiple mode. Use `data-search-placeholder` and `data-empty-message` for copy overrides.
+Load the prebuilt `../../dist/behavior.js` once as a browser module. The script reads the native `<template>`, manages focus, filtering, selected values, hidden form inputs, and `aria-expanded`. `data-multiple`, `data-searchable`, and `data-clearable` are Boolean attributes. `data-value` is the initial selected value or a comma-separated list for multiple selection. `data-name` creates hidden input(s) for native form submission. Each option value must be unique and must not contain a comma in multiple mode. Use `data-search-placeholder` and `data-empty-message` for copy overrides.
 
 The root emits bubbling `soup:change` with `event.detail.value` as a string for single selection or a string array for multiple selection. An application can set it by dispatching `new CustomEvent('soup:setvalue', {detail: {value}})` on the root. Use the native form handler for required-field validation. The trigger keeps its real label, disabled state, `aria-invalid`, and `aria-describedby` when applicable. Escape closes and restores focus; Arrow keys, Home, and End navigate options.
 

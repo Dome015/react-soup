@@ -10,6 +10,6 @@ The example mutates local demo state. A host app should check authorization on t
 
 ## Vanilla implementation
 
-`example.ts` holds this page’s local state transitions. The HTML states are the starting markup, and `../../behavior.ts` enhances only interactive Soup patterns. Keep the page script tied to native forms, buttons, menu events, and DOM updates; do not instantiate styled native controls through a Soup API. In a host, replace local demo mutations with persistence and show success only after it succeeds.
+`example.ts` holds this page’s local state transitions; the standalone pages load its prebuilt `src/vanilla/dist/examples/team-management/example.js` after `dist/behavior.js`. The HTML states are the starting markup. Keep the page script tied to native forms, buttons, menu events, and DOM updates; do not instantiate styled native controls through a Soup API. In a host, replace local demo mutations with persistence and show success only after it succeeds.
 
 Compare the same state and interaction with `src/react/examples/team-management/Example.tsx` in auto, light, and dark themes and at narrow width. See each component directory’s `AGENTS.md` for exact markup, ARIA, and event contracts.

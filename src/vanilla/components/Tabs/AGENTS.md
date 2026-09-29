@@ -21,7 +21,7 @@ Each tab needs a unique ID and `aria-controls` pointing to one panel. Each panel
 
 ## Script requirement
 
-Load `src/vanilla/behavior.ts` once through the host's TypeScript build. It enhances the existing tablist and panels and emits bubbling `soup:change` from the root with `event.detail.value` set to the selected tab ID. Native buttons still handle pointer and Enter/Space activation.
+Load the prebuilt `src/vanilla/dist/behavior.js` once as a browser module. It enhances the existing tablist and panels and emits bubbling `soup:change` from the root with `event.detail.value` set to the selected tab ID. Native buttons still handle pointer and Enter/Space activation.
 
 ## Reference
 

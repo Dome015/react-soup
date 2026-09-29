@@ -8,6 +8,6 @@ Use `Breadcrumbs` for a real parent destination, `Field` with native `FileUpload
 
 ## Vanilla implementation
 
-`example.ts` contains only this page's state transitions. Load it after the optional `../../behavior.ts` enhancement script, as the standalone HTML does. Keep form submissions and state changes in the page script; do not instantiate simple components in JavaScript.
+`example.ts` contains only this page's state transitions. Load the prebuilt `src/vanilla/dist/examples/document-review/example.js` after `dist/behavior.js`, as the standalone HTML does. Keep form submissions and state changes in the page script; do not instantiate simple components in JavaScript.
 
 Compare the same state and interaction with `src/react/examples/document-review/Example.tsx` in auto, light, and dark themes and at narrow width. See each component directory’s `AGENTS.md` for exact markup, ARIA, and event contracts.

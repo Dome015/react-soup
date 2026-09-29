@@ -8,6 +8,7 @@ A token driven UI library for React and plain HTML projects. Both implementation
 npm install
 npm run storybook
 npm run build-storybook
+npm run build-vanilla
 npm run vanilla:stories
 ```
 
@@ -30,7 +31,7 @@ The host supplies React and React DOM as peer dependencies. TypeScript and Story
 
 ## Vendor into a plain web project
 
-Copy `src/vanilla` **and** `src/shared`, including the HTML stories, complete examples, and `AGENTS.md` guides. Link `src/shared/styles/index.css` once. Copy the semantic markup from `src/vanilla/stories` or `src/vanilla/examples` into your page. Buttons, fields, native inputs, cards, layout, and most status components need no Soup JavaScript. For a menu, searchable dropdown, tabs, sortable table, or similar interaction, load the small optional `src/vanilla/behavior.ts` module through your TypeScript build and keep the component's authored HTML template. Read each component guide for its markup and events.
+Copy `src/vanilla` **and** `src/shared`, including `src/vanilla/dist`, the HTML stories, complete examples, and `AGENTS.md` guides. Link `src/shared/styles/index.css` once. Copy the semantic markup from `src/vanilla/stories` or `src/vanilla/examples` into your page. Buttons, fields, native inputs, cards, layout, and most status components need no Soup JavaScript. For a menu, searchable dropdown, tabs, sortable table, or similar interaction, load `src/vanilla/dist/behavior.js` once with `<script type="module">` and keep the component's authored HTML template. Copy the **entire** `dist` directory because entry files may import shared chunks. The host does not need Node, TypeScript, or a bundler. The TypeScript files remain the library's editable source; run `npm run build-vanilla` here after changing them.
 
 The default theme follows the system. Set `data-theme="light"` or `data-theme="dark"` on an ancestor to force a mode; `data-theme="auto"` follows the system. All aesthetic values live in `src/shared/styles/theme.css`.
 

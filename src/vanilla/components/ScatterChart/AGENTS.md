@@ -9,6 +9,6 @@ renderScatterChart(document.querySelector<HTMLElement>('#outcomes')!, {
 });
 ```
 
-Call it again when observations change. Each finite point is keyboard focusable and exposes its series, optional point name, and both values. The renderer updates axes, optional legend, accessible data table, empty state, and tooltip listeners. `xDomain` and `yDomain` must be finite, increasing pairs; otherwise they are calculated from data. `formatX` and `formatY` format point labels. A fixed chart needs no renderer, and `src/vanilla/behavior.ts` optionally adds tooltips.
+Call it again when observations change. Each finite point is keyboard focusable and exposes its series, optional point name, and both values. The renderer updates axes, optional legend, accessible data table, empty state, and tooltip listeners. `xDomain` and `yDomain` must be finite, increasing pairs; otherwise they are calculated from data. `formatX` and `formatY` format point labels. A fixed chart needs no renderer, and `src/vanilla/dist/behavior.js` optionally adds tooltips.
 
 Inspect all files under `../../stories/Components/ScatterChart/` and `../../stories/ChartFromData.html`. Compare against `src/react/stories/ScatterChart.stories.tsx` in auto, light, and dark themes and at narrow width.

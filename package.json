@@ -7,7 +7,7 @@
   "exports": {
     ".": "./src/react/index.ts",
     "./styles.css": "./src/shared/styles/index.css",
-    "./vanilla": "./src/vanilla/behavior.ts"
+    "./vanilla": "./src/vanilla/dist/behavior.js"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -17,6 +17,7 @@
     "typecheck": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "build-vanilla": "node scripts/build-vanilla.mjs",
     "vanilla:stories": "vite --host 127.0.0.1 --port 6007",
     "snapshot:vanilla": "node --experimental-strip-types scripts/snapshot-react-stories.ts"
   },
@@ -24,6 +25,7 @@
     "@storybook/react-vite": "^10.6.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "esbuild": "0.28.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "storybook": "^10.6.0",

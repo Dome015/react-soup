@@ -18,6 +18,6 @@ Use a native `<dialog>` for modal decisions. The browser supplies focus trapping
 </dialog>
 ```
 
-Load `../../behavior.ts` for the optional `data-soup-dialog-open` trigger and footer handling, or call `dialog.showModal()` / `dialog.close()` directly in your page. The enhancer emits bubbling `soup:confirm` for a non-submit footer action (`detail.action` is its visible text) and `soup:close` when the dialog closes. The header close button and a footer button reading “Cancel” close it. A footer submit button preserves native form submission and is handled by the host form handler. Never rely on color alone to explain a destructive action.
+Load `../../dist/behavior.js` for the optional `data-soup-dialog-open` trigger and footer handling, or call `dialog.showModal()` / `dialog.close()` directly in your page. The enhancer emits bubbling `soup:confirm` for a non-submit footer action (`detail.action` is its visible text) and `soup:close` when the dialog closes. The header close button and a footer button reading “Cancel” close it. A footer submit button preserves native form submission and is handled by the host form handler. Never rely on color alone to explain a destructive action.
 
 Inspect `../../stories/Components/Dialog/` and `../../examples/confirmation-dialog/`. Compare focus, Escape, cancel, confirm, and narrow layouts with `src/react/stories/Dialog.stories.tsx` in all theme modes. Shared CSS tokens control appearance.

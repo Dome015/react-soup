@@ -11,6 +11,6 @@ renderPieChart(document.querySelector<HTMLElement>('#allocation')!, {
 });
 ```
 
-The renderer excludes non-positive and non-finite values from slices, keeps all supplied data in the accessible table, and shows the empty state when the total is zero. It updates the SVG, legend, center label, table, and tooltip listeners together. Use real category labels and disclose exact values; color is not the only cue. `formatValue` can add a unit. A fixed chart needs no renderer, and `src/vanilla/behavior.ts` optionally adds tooltips to its authored marks.
+The renderer excludes non-positive and non-finite values from slices, keeps all supplied data in the accessible table, and shows the empty state when the total is zero. It updates the SVG, legend, center label, table, and tooltip listeners together. Use real category labels and disclose exact values; color is not the only cue. `formatValue` can add a unit. A fixed chart needs no renderer, and `src/vanilla/dist/behavior.js` optionally adds tooltips to its authored marks.
 
 Inspect all files under `../../stories/Components/PieChart/` and `../../stories/ChartFromData.html`. Compare against `src/react/stories/PieChart.stories.tsx` in auto, light, and dark themes and at narrow width.
