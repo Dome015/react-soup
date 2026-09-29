@@ -20,6 +20,7 @@ const preview: Preview = {
   parameters: {
     controls: { expanded: true },
     layout: 'fullscreen',
+    options: { storySort: { method: 'alphabetical', order: ['Components', 'Examples', 'Foundations'] } },
   },
 };
 

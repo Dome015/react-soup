@@ -18,5 +18,6 @@ import { Tabs } from "../../index";
 ## Usage rule
 
 Use for peer views within the same page. Stable IDs are needed. Arrow keys move between enabled tabs.
+Tab labels use the shared small control text and medium control height. Keep the selected label in ink with the accent underline, rather than coloring every tab accent blue.
 
 Check the `Tabs` Storybook story and relevant page examples when changing behavior or visual treatment.

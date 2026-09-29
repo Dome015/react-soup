@@ -14,6 +14,7 @@
 
 ```tsx
 import { Dropdown, Field } from "../../index";
+<Field label="Timezone" htmlFor="timezone">
 <Dropdown id="timezone" label="Timezone" searchable options={zones} value={zone} onValueChange={value => setZone(value as string)} />
 </Field>
 
@@ -23,3 +24,4 @@ import { Dropdown, Field } from "../../index";
 ```
 
 The trigger opens the list; typing filters options in a plain text search field; Arrow Up/Down, Home/End, Enter/Space, Escape, pointer selection, and clearing are supported. Multi-select stays open after choosing. The `Search + filters` and `Settings form` examples show real composition. All visual rules are in `src/styles/components.css` and use theme tokens only.
+The trigger and option rows follow the medium control height and small control text tokens.

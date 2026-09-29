@@ -4,6 +4,6 @@
 
 ## Pattern
 
-Use for a high-level overview. Start with one primary action, follow with a concise stat grid, then a table of recent records. Keep numbers, labels, and status text aligned. Replace sample data with actual metrics in a host app.
+Use for a high-level overview. Start with one primary action, follow with a concise stat grid, a trend chart, then a table of recent records. Keep numbers, labels, and status text aligned. Replace sample data with actual metrics in a host app.
 
 Copy the composition pattern into an app, adapt the data and actions, and keep the component and accessibility contracts from each component AGENTS guide.

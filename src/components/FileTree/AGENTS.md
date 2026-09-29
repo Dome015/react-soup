@@ -18,5 +18,6 @@ import { FileTree } from "../../index";
 ## Usage rule
 
 Folders use native disclosure. Stable unique IDs are required. The selected file uses aria-current.
+Folder and file rows share the medium control height and small control text, including in nested levels.
 
 Check the `FileTree` Storybook story and relevant page examples when changing behavior or visual treatment.

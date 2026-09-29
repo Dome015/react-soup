@@ -25,6 +25,12 @@
   --soup-color-focus: #2455a4;
   --soup-color-skeleton: #e3e3dd;
   --soup-color-skeleton-highlight: #f2f2ed;
+  --soup-chart-color-1: #2455a4;
+  --soup-chart-color-2: #087f76;
+  --soup-chart-color-3: #a76200;
+  --soup-chart-color-4: #7359a6;
+  --soup-chart-color-5: #2876a2;
+  --soup-chart-color-6: #596c64;
 
   --soup-font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
   --soup-font-size-xs: 0.75rem;
@@ -66,6 +72,9 @@
   --soup-dropdown-max-height: 16rem;
   --soup-card-min-width: 16rem;
   --soup-sidebar-width: 16rem;
+  --soup-sidebar-shell-min-height: var(--soup-story-min-height);
+  --soup-sidebar-border-inline-width: var(--soup-border-width);
+  --soup-sidebar-border-block-width: var(--soup-space-0);
   --soup-sidebar-nav-direction: column;
   --soup-sidebar-nav-item-width: 100%;
   --soup-sidebar-padding: var(--soup-space-8);
@@ -83,6 +92,18 @@
   --soup-icon-stroke: 1.75;
   --soup-icon-size-sm: 1rem;
   --soup-line-size: 0.75rem;
+  --soup-chart-swatch-size: 0.75rem;
+  --soup-chart-empty-height: 12rem;
+  --soup-chart-pie-width: 20rem;
+  --soup-chart-max-width: 40rem;
+  --soup-chart-cartesian-min-width: 36rem;
+  --soup-chart-sr-size: 1px;
+  --soup-chart-line-width: 2px;
+  --soup-chart-point-stroke: 2px;
+  --soup-chart-slice-gap: 2px;
+  --soup-chart-grid-opacity: 0.65;
+  --soup-chart-area-opacity: 0.16;
+  --soup-chart-hover-opacity: 0.72;
   --soup-skeleton-block-height: 6rem;
   --soup-story-min-height: 100vh;
   --soup-story-content-width: 36rem;
@@ -115,11 +136,13 @@
   --soup-duration-normal: 180ms;
   --soup-duration-pulse: 1s;
   --soup-ease: ease;
+  --soup-ease-linear: linear;
   --soup-opacity-disabled: 0.5;
   --soup-z-menu: 20;
   --soup-z-toast: 50;
   --soup-grid-min: min(100%, var(--soup-card-min-width));
   --soup-angle-half: 180deg;
+  --soup-angle-full: 360deg;
 }
 
 [data-theme='dark'] {
@@ -148,12 +171,21 @@
   --soup-color-focus: #91b7ff;
   --soup-color-skeleton: #30302d;
   --soup-color-skeleton-highlight: #42423d;
+  --soup-chart-color-1: #91b7ff;
+  --soup-chart-color-2: #6fd0c4;
+  --soup-chart-color-3: #f5ba66;
+  --soup-chart-color-4: #bca4f5;
+  --soup-chart-color-5: #6ec6e8;
+  --soup-chart-color-6: #adbcb1;
 }
 
 /* Breakpoints cannot read custom properties; define their responsive token changes here. */
 @media (max-width: 48rem) {
   :root, [data-theme='light'], [data-theme='dark'], [data-theme='auto'] {
     --soup-sidebar-width: 100%;
+    --soup-sidebar-shell-min-height: auto;
+    --soup-sidebar-border-inline-width: var(--soup-space-0);
+    --soup-sidebar-border-block-width: var(--soup-border-width);
     --soup-sidebar-nav-direction: row;
     --soup-sidebar-nav-item-width: auto;
     --soup-sidebar-padding: var(--soup-space-4);
@@ -190,5 +222,11 @@
     --soup-color-focus: #91b7ff;
     --soup-color-skeleton: #30302d;
     --soup-color-skeleton-highlight: #42423d;
+    --soup-chart-color-1: #91b7ff;
+    --soup-chart-color-2: #6fd0c4;
+    --soup-chart-color-3: #f5ba66;
+    --soup-chart-color-4: #bca4f5;
+    --soup-chart-color-5: #6ec6e8;
+    --soup-chart-color-6: #adbcb1;
   }
 }

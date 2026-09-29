@@ -18,5 +18,6 @@ import { Popover } from "../../index";
 ## Usage rule
 
 Use Dialog for a blocking decision. Popover closes on Escape and outside pointer input; include a meaningful label. The panel is portaled and clamped to the viewport, flipping above the trigger when there is insufficient space below. `align` expresses the preferred edge rather than forcing content offscreen.
+Its trigger uses the same medium height, small text, and horizontal padding as other text controls.
 
 Check the `Popover` Storybook story and relevant page examples when changing behavior or visual treatment.

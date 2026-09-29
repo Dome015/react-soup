@@ -18,5 +18,6 @@ import { Card, Stack } from "../../index";
 ## Usage rule
 
 Use for a coherent group, not as decoration around every element.
+Use an `h2` for a card section title; it shares the large title size and tight line height with dialog and chart titles. Use `Stack` for nested spacing and let the Card handle spacing between direct children.
 
 Check the `Card` Storybook story and relevant page examples when changing behavior or visual treatment.

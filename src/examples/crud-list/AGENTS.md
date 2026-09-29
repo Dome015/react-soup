@@ -6,4 +6,6 @@
 
 Use for a list of editable records. The toolbar owns creation, the Table displays comparable fields, Badge makes status textual, DropdownMenu gathers row actions, and Dialog confirms deletion. Keep row actions tied to the selected record. This example mutates local demo state.
 
+The empty Storybook state keeps the create action available and shows an explanation in place of an empty table. After creating a record, the table appears. Use this small pattern when the screen needs basic create and delete actions; use `Examples/Project Workspace` when filtering, sorting, pagination, and editing also matter.
+
 Copy the composition pattern into an app, adapt the data and actions, and keep the component and accessibility contracts from each component AGENTS guide.
