@@ -1,6 +1,6 @@
 # Component selection guide
 
-Each child directory has a `.tsx` implementation and an `AGENTS.md` guide. Public exports are in `src/react/index.ts`; shared internal types and `cx` are in `shared.ts`.
+Read the complete public inventory and required workflow in `../AGENTS.md` before building a screen. Use a listed component or composition whenever it covers the need; do not recreate its markup, behavior, or styling independently. This applies especially to Table and FileUpload. Each public component directory has a `.tsx` implementation and an `AGENTS.md` guide. Public exports are in `src/react/index.ts`; shared internal types and `cx` are in `shared.ts`.
 
 ## Choose by job
 
@@ -15,6 +15,6 @@ Each child directory has a `.tsx` implementation and an `AGENTS.md` guide. Publi
 
 ## General API rules
 
-Components pass through standard HTML props where possible. `Button` defaults to `type="button"`; set `type="submit"` explicitly for forms. Prefer controlled props for data and stateful flows. Keep labels meaningful, do not use placeholder as a label, and test keyboard access. Component CSS lives in `src/shared/styles/components.css`; visual values come from `src/shared/styles/theme.css`.
+Components pass through standard HTML props where possible. `Button` defaults to `type="button"`; set `type="submit"` explicitly for forms. Prefer controlled props for data and stateful flows. Keep labels meaningful, do not use placeholder as a label, and test keyboard access. Do not add custom CSS when existing components, variants, tokens, or layout primitives cover the design. Component CSS lives in `src/shared/styles/components.css`; visual values come from `src/shared/styles/theme.css`.
 
 For visual consistency, compare new controls with `Foundations/Visual Rhythm` in Storybook: text triggers, tabs, menu choices, and tree rows use the shared medium control height and small text; icon-only triggers use the icon control width. Card, dialog, and chart section titles use the same large type. Chart legend labels use body ink beside categorical swatches.
